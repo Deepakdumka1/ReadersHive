@@ -15,6 +15,8 @@ class CommentsViewController: UIViewController {
     private let sendButton = UIButton(type: .system)
     private let bottomContainer = UIView()
     private var bottomConstraint: NSLayoutConstraint!
+    
+    private var headerView: PostHeaderView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +27,18 @@ class CommentsViewController: UIViewController {
         
         if let postId = post?.id, let feedData = feedData {
             listener = feedData.fetchComments(for: postId) { [weak self] fetchedComments in
-                self?.comments = fetchedComments
-                self?.tableView.reloadData()
+                guard let self = self else { return }
+                self.comments = fetchedComments
+                self.tableView.reloadData()
+                
+                // Update live comment count
+                self.post?.commentCount = fetchedComments.count
+                if let updatedPost = self.post {
+                    self.headerView?.configure(with: updatedPost)
+                }
+                
                 if !fetchedComments.isEmpty {
-                    self?.tableView.scrollToRow(at: IndexPath(row: fetchedComments.count - 1, section: 0), at: .bottom, animated: true)
+                    self.tableView.scrollToRow(at: IndexPath(row: fetchedComments.count - 1, section: 0), at: .bottom, animated: true)
                 }
             }
         }
@@ -50,14 +60,15 @@ class CommentsViewController: UIViewController {
         tableView.keyboardDismissMode = .onDrag
         
         if let post = post, showPostHeader {
-            let headerView = PostHeaderView(frame: .zero)
-            headerView.configure(with: post)
+            headerView = PostHeaderView(frame: .zero)
+            headerView?.delegate = self
+            headerView?.configure(with: post)
             
             // Calculate dynamic height for header
             let targetSize = CGSize(width: view.bounds.width, height: UIView.layoutFittingCompressedSize.height)
-            let size = headerView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
+            let size = headerView!.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
             
-            headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: size.height)
+            headerView?.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: size.height)
             tableView.tableHeaderView = headerView
         }
         
@@ -143,5 +154,24 @@ extension CommentsViewController: UITableViewDataSource, UITableViewDelegate {
         let comment = comments[indexPath.row]
         cell.configure(with: comment)
         return cell
+    }
+}
+
+extension CommentsViewController: PostHeaderViewDelegate {
+    func didTapLike(on headerView: PostHeaderView) {
+        guard let post = post else { return }
+        feedData?.toggleLike(for: post.id)
+        
+        // Optimistically update the UI
+        let wasLiked = post.isLiked
+        self.post?.isLiked = !wasLiked
+        self.post?.likeCount += wasLiked ? -1 : 1
+        
+        if let updatedPost = self.post {
+            headerView.configure(with: updatedPost)
+        }
+        
+        // Post a notification if the Feed or Profile feed needs to be updated as well
+        NotificationCenter.default.post(name: NSNotification.Name("postLiked"), object: nil)
     }
 }

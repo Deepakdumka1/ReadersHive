@@ -1,6 +1,12 @@
 import UIKit
 
+protocol PostHeaderViewDelegate: AnyObject {
+    func didTapLike(on headerView: PostHeaderView)
+}
+
 class PostHeaderView: UIView {
+    
+    weak var delegate: PostHeaderViewDelegate?
     
     let avatarImageView = UIImageView()
     let nameLabel = UILabel()
@@ -165,6 +171,18 @@ class PostHeaderView: UIView {
             separator.heightAnchor.constraint(equalToConstant: 1),
             separator.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+        
+        let likeTap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        likeIcon.isUserInteractionEnabled = true
+        likeIcon.addGestureRecognizer(likeTap)
+        
+        let likeLabelTap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        likeLabel.isUserInteractionEnabled = true
+        likeLabel.addGestureRecognizer(likeLabelTap)
+    }
+    
+    @objc private func likeTapped() {
+        delegate?.didTapLike(on: self)
     }
     
     func configure(with post: FeedPost) {
