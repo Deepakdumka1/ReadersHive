@@ -75,6 +75,7 @@ class OtherUserProfileViewController: UIViewController {
         profileListener = db.collection("profiles").document(userId).addSnapshotListener { [weak self] snapshot, _ in
             if let updatedProfile = try? snapshot?.data(as: Profile.self) {
                 self?.profile = updatedProfile
+                self?.navigationItem.title = "@\(updatedProfile.username)"
                 self?.collectionView.reloadItems(at: [IndexPath(item: 0, section: 0)])
             }
         }
@@ -171,7 +172,7 @@ class OtherUserProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        navigationItem.title = ""
+        navigationItem.title = "@\(profile?.username ?? "")"
         navigationItem.largeTitleDisplayMode = .never
         
         NSLayoutConstraint.activate([

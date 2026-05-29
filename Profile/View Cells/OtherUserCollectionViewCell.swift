@@ -52,7 +52,7 @@ class OtherUserCollectionViewCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 24
         containerView.layer.masksToBounds = true
         
-        userImageView.layer.cornerRadius = 50 // Fixed size assumption for better UI
+        userImageView.layer.cornerRadius = userImageView.frame.height/2
         userImageView.clipsToBounds = true
         userImageView.layer.borderWidth = 3
         userImageView.layer.borderColor = UIColor.systemBackground.cgColor
@@ -101,9 +101,8 @@ class OtherUserCollectionViewCell: UICollectionViewCell {
         userImageView.loadFromUrl(imageName)
         
         nameLabel.text = name
-        userBioLabel.text = bio ?? "No bio yet."
+        userBioLabel.text = bio ?? ""
         userBioLabel.font = .systemFont(ofSize: 15, weight: .medium)
-        userBioLabel.textColor = .secondaryLabel
         
         setStatButton(followersButton, count: followers, label: "followers")
         setStatButton(followingButton, count: following, label: "following")

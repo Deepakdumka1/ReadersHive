@@ -16,8 +16,19 @@ class ProfileViewController: UIViewController {
         setupCollectionView()
         registerCells()
         
+        setupUI()
+        
         fetchCurrentProfile()
         fetchUserPosts()
+    }
+    
+    private func setupUI() {
+        NSLayoutConstraint.activate([
+            profileCollectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            profileCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            profileCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            profileCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
     
     private func fetchCurrentProfile() {
@@ -207,9 +218,9 @@ extension ProfileViewController: ProfileCardDelegate, UIImagePickerControllerDel
             "avatar_url": urlString
         ]) { error in
             if let error = error {
-                print("❌ Error updating profile data: \(error.localizedDescription)")
+                print("Error updating profile data: \(error.localizedDescription)")
             } else {
-                print("✅ Profile image updated successfully!")
+                print("Profile image updated successfully!")
             }
         }
     }
