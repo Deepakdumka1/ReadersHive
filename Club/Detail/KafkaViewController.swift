@@ -199,7 +199,7 @@ self.allDiscussionPosts = detail.posts
                 }
                 
                 DispatchQueue.main.async {
-                    self.KafkaCollectionView.reloadSections(IndexSet(integer: 2))
+                    self.KafkaCollectionView.reloadData()
                 }
             }
             
@@ -219,7 +219,7 @@ self.allDiscussionPosts = detail.posts
                 }
                 
                 DispatchQueue.main.async {
-                    self.KafkaCollectionView.reloadSections(IndexSet(integer: 3))
+                    self.KafkaCollectionView.reloadData()
                 }
             }
             
@@ -257,7 +257,7 @@ self.allDiscussionPosts = detail.posts
                 }
                 
                 DispatchQueue.main.async {
-                    self.KafkaCollectionView.reloadSections(IndexSet(integer: 5))
+                    self.KafkaCollectionView.reloadData()
                 }
             }
         }

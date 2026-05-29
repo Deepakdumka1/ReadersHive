@@ -152,7 +152,7 @@ extension BookshelfViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         let books = book.getBooks(for: sections[section])
-        return books.count
+        return max(3, books.count)
     }
     
     
@@ -170,11 +170,11 @@ extension BookshelfViewController: UICollectionViewDataSource{
         
         let books = book.getBooks(for: sections[indexPath.section])
         
-        if books.isEmpty {
-            cell.showEmptyState(slot: indexPath.item + 1)
-        } else if indexPath.item < books.count {
+        if indexPath.item < books.count {
             let currentBook = books[indexPath.item]
             cell.configure(with: currentBook, rank: indexPath.item + 1)
+        } else {
+            cell.showEmptyState(slot: indexPath.item + 1)
         }
         
         return cell
