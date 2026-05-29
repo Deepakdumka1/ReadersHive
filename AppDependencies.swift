@@ -10,7 +10,11 @@ import Foundation
 
 class AppDependencies {
     
-    static let shared = AppDependencies()
+    static var shared = AppDependencies()
+    
+    static func reset() {
+        shared = AppDependencies()
+    }
     
     let messageDataModel: MessageDataModel
     let clubData: ClubsData

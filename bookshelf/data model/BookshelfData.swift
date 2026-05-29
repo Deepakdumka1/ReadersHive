@@ -65,8 +65,9 @@ class BookshelfData {
                 }
                 
                 // Parse allBooks (cache)
+                var updatedAllBooks: [Book] = []
                 if let booksData = data["allBooks"] as? [[String: Any]] {
-                    self.allBooks = booksData.compactMap { dict -> Book? in
+                    updatedAllBooks = booksData.compactMap { dict -> Book? in
                         guard let id = dict["id"] as? String,
                               let title = dict["title"] as? String,
                               let author = dict["author"] as? String,
@@ -74,9 +75,16 @@ class BookshelfData {
                         return Book(id: id, title: title, author: author, coverImageURL: url, description: dict["description"] as? String ?? "")
                     }
                 }
+                self.allBooks = updatedAllBooks
                 
                 if !updatedSections.isEmpty {
                     self.sections = updatedSections
+                } else {
+                    self.sections = [
+                        ShelfSection(shelfType: .currentlyReading, title: "Currently Reading", books: [], isPrivate: false),
+                        ShelfSection(shelfType: .wantToRead, title: "Want To Read", books: [], isPrivate: false),
+                        ShelfSection(shelfType: .finished, title: "Finished", books: [], isPrivate: false)
+                    ]
                 }
                 
                 print("📚 Bookshelf updated from Firestore")
@@ -84,6 +92,12 @@ class BookshelfData {
                 completion?()
             } else {
                 // If no data, maybe seed with defaults
+                self.sections = [
+                    ShelfSection(shelfType: .currentlyReading, title: "Currently Reading", books: [], isPrivate: false),
+                    ShelfSection(shelfType: .wantToRead, title: "Want To Read", books: [], isPrivate: false),
+                    ShelfSection(shelfType: .finished, title: "Finished", books: [], isPrivate: false)
+                ]
+                self.allBooks = []
                 self.save()
             }
         }

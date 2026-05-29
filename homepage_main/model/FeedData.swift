@@ -124,10 +124,10 @@ final class FeedData {
         let testPost = FeedPost(
             id: UUID().uuidString,
             userId: "system",
-            name: "BookHive Team",
+            name: "ReadersHive Team",
             time: "Just now",
             title: "Welcome!",
-            content: "Welcome to the new Firebase-powered BookHive! Your data is now live and syncing in real-time.",
+            content: "Welcome to the new Firebase-powered ReadersHive! Your data is now live and syncing in real-time.",
             likeCount: 5,
             commentCount: 2,
             isLiked: false,

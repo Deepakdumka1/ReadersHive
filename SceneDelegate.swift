@@ -98,7 +98,7 @@ class AuthViewController: UIViewController {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "BookHive"
+        label.text = "ReadersHive"
         label.font = UIFont.systemFont(ofSize: 34, weight: .bold)
         label.textColor = .label
         label.textAlignment = .center
@@ -241,6 +241,8 @@ class AuthViewController: UIViewController {
                 } else {
                     try await FirebaseManager.shared.signIn(email: email, password: password)
                 }
+                
+                AppDependencies.reset()
                 
                 DispatchQueue.main.async {
                     self.dismissToApp()

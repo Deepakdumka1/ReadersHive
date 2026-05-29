@@ -30,8 +30,8 @@ class ClubsData {
             
             let fetchedClubs = snapshot?.documents.compactMap { try? $0.data(as: Club.self) } ?? []
             
-            if fetchedClubs.isEmpty {
-                print("ℹ️ No clubs found. Seeding sample clubs...")
+            if fetchedClubs.count < 8 {
+                print("ℹ️ Less than 8 clubs found. Seeding sample clubs...")
                 self.seedClubs()
             }
             
@@ -44,7 +44,12 @@ class ClubsData {
         let sampleClubs = [
             Club(id: UUID().uuidString, name: "Kafka Circle", category: .classics, description: "Discussing the works of Franz Kafka.", imagePath: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1000", memberCount: 120, language: "English", members: [], section: .recommended, createdBy: "system", visibility: "public"),
             Club(id: UUID().uuidString, name: "Poetry Night", category: .poetry, description: "Share your latest poems and lyrics.", imagePath: "https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=1000", memberCount: 85, language: "English", members: [], section: .trending, createdBy: "system", visibility: "public"),
-            Club(id: UUID().uuidString, name: "Dark Academia", category: .dark, description: "For lovers of mystery and gothic literature.", imagePath: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1000", memberCount: 210, language: "English", members: [], section: .recommended, createdBy: "system", visibility: "public")
+            Club(id: UUID().uuidString, name: "Dark Academia", category: .dark, description: "For lovers of mystery and gothic literature.", imagePath: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1000", memberCount: 210, language: "English", members: [], section: .recommended, createdBy: "system", visibility: "public"),
+            Club(id: UUID().uuidString, name: "The Stoic Readers", category: .philosophy, description: "Explore the writings of Marcus Aurelius, Seneca, and modern stoicism.", imagePath: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1000", memberCount: 150, language: "English", members: [], section: .trending, createdBy: "system", visibility: "public"),
+            Club(id: UUID().uuidString, name: "Dragons & Magic", category: .fantasy, description: "For hardcore fans of high fantasy, epic world-building, and magical systems.", imagePath: "https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?q=80&w=1000", memberCount: 340, language: "English", members: [], section: .recommended, createdBy: "system", visibility: "public"),
+            Club(id: UUID().uuidString, name: "Modern Poetry Society", category: .poetry, description: "Discussing contemporary poets and spoken word.", imagePath: "https://images.unsplash.com/photo-1550592704-6c76defa99ce?q=80&w=1000", memberCount: 65, language: "English", members: [], section: .trending, createdBy: "system", visibility: "public"),
+            Club(id: UUID().uuidString, name: "The Renaissance Thinkers", category: .philosophy, description: "A deep dive into political philosophy and existentialism.", imagePath: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000", memberCount: 95, language: "English", members: [], section: .recommended, createdBy: "system", visibility: "public"),
+            Club(id: UUID().uuidString, name: "Mystery & Macabre", category: .dark, description: "Exploring dark thrillers, true crime, and the macabre.", imagePath: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=1000", memberCount: 280, language: "English", members: [], section: .trending, createdBy: "system", visibility: "public")
         ]
         
         for club in sampleClubs {

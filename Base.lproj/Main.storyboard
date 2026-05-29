@@ -1187,11 +1187,7 @@
                                     <segue destination="v6i-jE-Pcg" kind="presentation" id="ajs-Yr-7mi"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="action" id="w7X-Tc-GWC">
-                                <connections>
-                                    <action selector="shareButtonTapped:" destination="Rx9-p5-6tW" id="zQ2-h5-8Je"/>
-                                </connections>
-                            </barButtonItem>
+
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -1375,12 +1371,9 @@
                             <constraint firstItem="04g-yV-tde" firstAttribute="bottom" secondItem="4FL-PQ-iPh" secondAttribute="bottom" id="szE-WF-7RW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="@username" id="sQ0-Di-xbY">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ellipsis" catalog="system" id="EpL-8u-XnY"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="@username" id="sQ0-Di-xbY"/>
                     <connections>
                         <outlet property="collectionView" destination="4FL-PQ-iPh" id="KLe-hz-4JX"/>
-                        <outlet property="moreButton" destination="EpL-8u-XnY" id="ffF-GZ-DZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Z0-5u-I0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

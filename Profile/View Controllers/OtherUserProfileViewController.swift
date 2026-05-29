@@ -18,7 +18,6 @@ enum ProfileItem {
 
 class OtherUserProfileViewController: UIViewController {
     
-    @IBOutlet weak var moreButton: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var profile: Profile?
@@ -204,7 +203,7 @@ class OtherUserProfileViewController: UIViewController {
         let item = NSCollectionLayoutItem(layoutSize: size)
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: size, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16)
         return section
     }
     
@@ -402,6 +401,10 @@ extension OtherUserProfileViewController: UICollectionViewDataSource, UICollecti
                 cell.followButton.setTitle(isFollowing ? "Following" : (doesFollowMe ? "Follow Back" : "Follow"), for: .normal)
                 cell.followButton.backgroundColor = isFollowing ? .systemGray5 : .systemBlue
                 cell.followButton.setTitleColor(isFollowing ? .label : .white, for: .normal)
+                
+                let isSelf = (user.userId == currentUid)
+                cell.followButton.isHidden = isSelf
+                cell.messageButton.isHidden = isSelf
             }
             // Elevate the zPosition to ensure the Message button is not
             // secretly overlaid by orthogonal layout scroll views from Section 1 headers

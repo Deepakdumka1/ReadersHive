@@ -108,6 +108,35 @@ class searchViewController: UIViewController {
         trendingBooks = allBooks
         filteredBooks = allBooks
         
+        if allBooks.isEmpty {
+            let group = DispatchGroup()
+            
+            group.enter()
+            GoogleBooksService.fetchDefaultBooks(query: "subject:fiction") { [weak self] books in
+                self?.suggestedBooks = books.map { $0.toBook() }
+                group.leave()
+            }
+            
+            group.enter()
+            GoogleBooksService.fetchDefaultBooks(query: "bestseller") { [weak self] books in
+                self?.trendingBooks = books.map { $0.toBook() }
+                group.leave()
+            }
+            
+            group.enter()
+            GoogleBooksService.fetchDefaultBooks(query: "new releases") { [weak self] books in
+                self?.newReleases = books.map { $0.toBook() }
+                group.leave()
+            }
+            
+            group.notify(queue: .main) { [weak self] in
+                guard let self = self else { return }
+                if self.currentType == .books && (self.searchController.searchBar.text?.isEmpty ?? true) {
+                    self.mainsearchCollectionView.reloadData()
+                }
+            }
+        }
+        
         // 2. Clubs Sync
         clubListener?.remove()
         clubListener = db.collection("clubs").addSnapshotListener { [weak self] snapshot, _ in
@@ -129,7 +158,8 @@ class searchViewController: UIViewController {
         profileListener = db.collection("profiles").addSnapshotListener { [weak self] snapshot, _ in
             guard let self = self else { return }
             let fetchedUsers = snapshot?.documents.compactMap { try? $0.data(as: Profile.self) } ?? []
-            self.users = fetchedUsers
+            let currentUserId = Auth.auth().currentUser?.uid ?? ""
+            self.users = fetchedUsers.filter { $0.userId != currentUserId }
             
             if self.currentType == .users && (self.searchController.searchBar.text?.isEmpty ?? true) {
                 self.filteredUsers = self.recentUsers.isEmpty ? Array(fetchedUsers.prefix(10)) : self.recentUsers
