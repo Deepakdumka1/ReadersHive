@@ -101,9 +101,8 @@ class OtherUserCollectionViewCell: UICollectionViewCell {
         userImageView.loadFromUrl(imageName)
         
         nameLabel.text = name
-        userBioLabel.text = bio ?? "No bio yet."
+        userBioLabel.text = bio ?? ""
         userBioLabel.font = .systemFont(ofSize: 15, weight: .medium)
-        userBioLabel.textColor = .secondaryLabel
         
         setStatButton(followersButton, count: followers, label: "followers")
         setStatButton(followingButton, count: following, label: "following")
