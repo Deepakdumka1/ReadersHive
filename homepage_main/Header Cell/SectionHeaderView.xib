@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionHeaderView" id="l5W-68-4wk" customClass="SectionHeaderView" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Clubs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRk-bx-auK">
+                    <rect key="frame" x="0.0" y="11.999999999999998" width="95.666666666666671" height="26.333333333333329"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zm-sn-ffG">
+                    <rect key="frame" x="375" y="25" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydu-TU-Vbl">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jXg-ta-caa"/>
+            <constraints>
+                <constraint firstItem="1Zm-sn-ffG" firstAttribute="trailing" secondItem="jXg-ta-caa" secondAttribute="trailing" id="2mv-4B-cd8"/>
+                <constraint firstItem="Ydu-TU-Vbl" firstAttribute="leading" secondItem="l5W-68-4wk" secondAttribute="leading" id="D33-eC-8Ot"/>
+                <constraint firstItem="1Zm-sn-ffG" firstAttribute="centerY" secondItem="l5W-68-4wk" secondAttribute="centerY" id="HJy-nd-Yre"/>
+                <constraint firstItem="Ydu-TU-Vbl" firstAttribute="bottom" secondItem="l5W-68-4wk" secondAttribute="bottom" id="HKg-gU-iIV"/>
+                <constraint firstItem="iRk-bx-auK" firstAttribute="leading" secondItem="l5W-68-4wk" secondAttribute="leading" id="S6S-Rr-kV0"/>
+                <constraint firstItem="iRk-bx-auK" firstAttribute="centerY" secondItem="l5W-68-4wk" secondAttribute="centerY" id="XpY-wT-eBP"/>
+                <constraint firstItem="Ydu-TU-Vbl" firstAttribute="top" secondItem="l5W-68-4wk" secondAttribute="top" id="Y7b-jZ-CuY"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="iRk-bx-auK" id="QcM-OZ-DqR"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="122.53521126760565"/>
+        </collectionReusableView>
+    </objects>
+</document>

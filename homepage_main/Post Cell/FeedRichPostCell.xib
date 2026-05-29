@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedRichPostCell" id="gTV-IL-0wX" customClass="FeedRichPostCell" customModule="homepage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <!-- Header -->
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="avatarImg">
+                        <rect key="frame" x="20" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="wd1"/>
+                            <constraint firstAttribute="height" constant="40" id="hg1"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="headerStack">
+                        <rect key="frame" x="70" y="20" width="259" height="38"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="nameActionStack">
+                                <rect key="frame" x="0.0" y="0.0" width="259" height="19.333333333333332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nameLbl">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="timeLbl">
+                                        <rect key="frame" x="90" y="1.333333333333333" width="169" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="actionLbl">
+                                <rect key="frame" x="0.0" y="21.333333333333336" width="259" height="16.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="optionsBtn">
+                        <rect key="frame" x="339" y="16" width="26" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="optW"/>
+                            <constraint firstAttribute="height" constant="20" id="optH"/>
+                        </constraints>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="...">
+                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                        </buttonConfiguration>
+                    </button>
+                    
+                    <!-- Content Stack -->
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="contentStack">
+                        <rect key="frame" x="20" y="74" width="335" height="379"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content text goes here..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="contentLbl">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            
+                            <!-- Post Image -->
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="postImg">
+                                <rect key="frame" x="0.0" y="32.333333333333343" width="335" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="postImgH"/>
+                                </constraints>
+                            </imageView>
+                            
+                            <!-- Book Info Row (Below Image) -->
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bookRowView">
+                                <rect key="frame" x="0.0" y="294.33333333333331" width="335" height="84.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cherry Bombe: The Cookbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bookTitleLbl">
+                                        <rect key="frame" x="0.0" y="32.333333333333371" width="223" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bookCoverImg">
+                                        <rect key="frame" x="285" y="17.333333333333371" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="bkW"/>
+                                            <constraint firstAttribute="height" constant="50" id="bkH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bookTitleLbl" firstAttribute="centerY" secondItem="bookRowView" secondAttribute="centerY" id="br1"/>
+                                    <constraint firstItem="bookCoverImg" firstAttribute="centerY" secondItem="bookRowView" secondAttribute="centerY" id="br2"/>
+                                    <constraint firstAttribute="trailing" secondItem="bookCoverImg" secondAttribute="trailing" id="br3"/>
+                                    <constraint firstItem="bookTitleLbl" firstAttribute="leading" secondItem="bookRowView" secondAttribute="leading" id="br4"/>
+                                    <constraint firstAttribute="height" constant="84.666666666666686" id="br5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+
+                    <!-- Footer -->
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="footerStack">
+                        <rect key="frame" x="20" y="534" width="335" height="24"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="likeStack">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="likeIcon">
+                                        <rect key="frame" x="0.0" y="2.3333333333333321" width="20" height="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="liW"/>
+                                            <constraint firstAttribute="height" constant="20" id="liH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="likeCount">
+                                        <rect key="frame" x="24" y="0.0" width="22" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="commentStack">
+                                <rect key="frame" x="62" y="0.0" width="37.333333333333343" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="commentIcon">
+                                        <rect key="frame" x="0.0" y="2.6666666666666643" width="20" height="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="ciW"/>
+                                            <constraint firstAttribute="height" constant="20" id="ciH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="commentCount">
+                                        <rect key="frame" x="24" y="0.0" width="13.333333333333336" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="footerSpacer">
+                                <rect key="frame" x="115.33333333333334" y="0.0" width="179.66666666666666" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="shareIcon">
+                                <rect key="frame" x="311" y="1" width="24" height="20.666666666666664"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="shW"/>
+                                    <constraint firstAttribute="height" constant="24" id="shH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="avatarImg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="c1"/>
+                <constraint firstItem="avatarImg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="c2"/>
+                <constraint firstItem="headerStack" firstAttribute="leading" secondItem="avatarImg" secondAttribute="trailing" constant="10" id="c3"/>
+                <constraint firstItem="headerStack" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="c4"/>
+                 <constraint firstItem="optionsBtn" firstAttribute="leading" secondItem="headerStack" secondAttribute="trailing" constant="10" id="c5"/>
+                <constraint firstAttribute="trailing" secondItem="optionsBtn" secondAttribute="trailing" constant="10" id="c6"/>
+                 <constraint firstItem="optionsBtn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="c7"/>
+                 
+                <constraint firstItem="contentStack" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="c8"/>
+                <constraint firstAttribute="trailing" secondItem="contentStack" secondAttribute="trailing" constant="20" id="c9"/>
+                <constraint firstItem="contentStack" firstAttribute="top" secondItem="headerStack" secondAttribute="bottom" constant="16" id="c10"/>
+                
+                <constraint firstItem="footerStack" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="c11"/>
+                <constraint firstAttribute="trailing" secondItem="footerStack" secondAttribute="trailing" constant="20" id="c12"/>
+                <constraint firstItem="footerStack" firstAttribute="top" secondItem="contentStack" secondAttribute="bottom" constant="20" id="c13"/> // Ensure footer is pushed down
+                <constraint firstAttribute="bottom" secondItem="footerStack" secondAttribute="bottom" constant="22" id="c14"/>
+            </constraints>
+            <connections>
+                <outlet property="actionLabel" destination="actionLbl" id="outAct"/>
+                <outlet property="avatarImageView" destination="avatarImg" id="outAv"/>
+                <outlet property="bookCoverImageView" destination="bookCoverImg" id="outBCI"/>
+                <outlet property="bookRowView" destination="bookRowView" id="outBRV"/>
+                <outlet property="bookTitleLabel" destination="bookTitleLbl" id="outBTL"/>
+                <outlet property="commentCountLabel" destination="commentCount" id="outCm"/>
+                <outlet property="contentLabel" destination="contentLbl" id="outCt"/>
+                <outlet property="likeCountLabel" destination="likeCount" id="outLk"/>
+                <outlet property="nameLabel" destination="nameLbl" id="outNm"/>
+                <outlet property="postImageView" destination="postImg" id="outPIm"/>
+                <outlet property="timeLabel" destination="timeLbl" id="outTm"/>
+                <outlet property="likeStackView" destination="likeStack" id="outLS"/>
+                <outlet property="likeIconImageView" destination="likeIcon" id="outLI"/>
+                <outlet property="shareIconImageView" destination="shareIcon" id="outSI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bubble.right" catalog="system" width="128" height="110"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
+</document>

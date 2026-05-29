@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClubCollectionViewCell" id="gTV-IL-0wX" customClass="ClubCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-YR-wb1">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zs-VE-4zB">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="img-h-001"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Club Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC9-fO-beJ">
+                                <rect key="frame" x="10" y="186" width="70" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btn-join-01">
+                                <rect key="frame" x="115" y="184" width="50" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="4" maxX="12" maxY="4"/>
+                                <state key="normal" title="Join">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="joinButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="BOi-CT-iii"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-nk-Kcn">
+                                <rect key="frame" x="10" y="208" width="155" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="252" image="person.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ico-mem-001">
+                                <rect key="frame" x="10" y="249.33333333333334" width="18" height="12.333333333333286"/>
+                                <color key="tintColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="ico-h-001"/>
+                                    <constraint firstAttribute="width" constant="18" id="ico-w-001"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="928" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk2-S6-JrE">
+                                <rect key="frame" x="32" y="248.33333333333334" width="21" height="13.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-gf-OlC">
+                                <rect key="frame" x="62.999999999999993" y="248.33333333333334" width="24.666666666666664" height="13.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azy-I1-I9L">
+                                <rect key="frame" x="97.666666666666671" y="248.33333333333334" width="38.000000000000014" height="13.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.56000000000000005" green="0.56000000000000005" blue="0.57999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cfk-gf-OlC" firstAttribute="centerY" secondItem="ico-mem-001" secondAttribute="centerY" id="c-cat-cy"/>
+                            <constraint firstItem="Cfk-gf-OlC" firstAttribute="leading" secondItem="Xk2-S6-JrE" secondAttribute="trailing" constant="10" id="c-cat-lead"/>
+                            <constraint firstItem="pcf-nk-Kcn" firstAttribute="leading" secondItem="NDu-YR-wb1" secondAttribute="leading" constant="10" id="c-desc-lead"/>
+                            <constraint firstItem="pcf-nk-Kcn" firstAttribute="top" secondItem="KC9-fO-beJ" secondAttribute="bottom" constant="2" id="c-desc-top"/>
+                            <constraint firstAttribute="trailing" secondItem="pcf-nk-Kcn" secondAttribute="trailing" constant="10" id="c-desc-trail"/>
+                            <constraint firstAttribute="bottom" secondItem="ico-mem-001" secondAttribute="bottom" constant="8" id="c-ico-bot"/>
+                            <constraint firstItem="ico-mem-001" firstAttribute="leading" secondItem="NDu-YR-wb1" secondAttribute="leading" constant="10" id="c-ico-lead"/>
+                            <constraint firstItem="ico-mem-001" firstAttribute="top" secondItem="pcf-nk-Kcn" secondAttribute="bottom" constant="8" id="c-ico-top"/>
+                            <constraint firstItem="8zs-VE-4zB" firstAttribute="leading" secondItem="NDu-YR-wb1" secondAttribute="leading" id="c-img-lead"/>
+                            <constraint firstItem="8zs-VE-4zB" firstAttribute="top" secondItem="NDu-YR-wb1" secondAttribute="top" id="c-img-top"/>
+                            <constraint firstAttribute="trailing" secondItem="8zs-VE-4zB" secondAttribute="trailing" id="c-img-trail"/>
+                            <constraint firstItem="Azy-I1-I9L" firstAttribute="centerY" secondItem="ico-mem-001" secondAttribute="centerY" id="c-lang-cy"/>
+                            <constraint firstItem="Azy-I1-I9L" firstAttribute="leading" secondItem="Cfk-gf-OlC" secondAttribute="trailing" constant="10" id="c-lang-lead"/>
+                            <constraint firstItem="Xk2-S6-JrE" firstAttribute="centerY" secondItem="ico-mem-001" secondAttribute="centerY" id="c-num-cy"/>
+                            <constraint firstItem="Xk2-S6-JrE" firstAttribute="leading" secondItem="ico-mem-001" secondAttribute="trailing" constant="4" id="c-num-lead"/>
+                            <constraint firstItem="KC9-fO-beJ" firstAttribute="leading" secondItem="NDu-YR-wb1" secondAttribute="leading" constant="10" id="c-ttl-lead"/>
+                            <constraint firstItem="KC9-fO-beJ" firstAttribute="top" secondItem="8zs-VE-4zB" secondAttribute="bottom" constant="6" id="c-ttl-top"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NDu-YR-wb1" secondAttribute="trailing" id="Q0t-HW-Tyt"/>
+                <constraint firstItem="NDu-YR-wb1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QPl-TY-lE7"/>
+                <constraint firstItem="NDu-YR-wb1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y0k-2x-fBG"/>
+                <constraint firstAttribute="bottom" secondItem="NDu-YR-wb1" secondAttribute="bottom" id="tg0-ka-W3N"/>
+            </constraints>
+            <size key="customSize" width="175" height="270"/>
+            <connections>
+                <outlet property="ClubTitle" destination="KC9-fO-beJ" id="8v1-KM-9XS"/>
+                <outlet property="clubDescription" destination="pcf-nk-Kcn" id="VGr-Wi-aff"/>
+                <outlet property="containerView" destination="NDu-YR-wb1" id="cnt-vw-001"/>
+                <outlet property="imageView" destination="8zs-VE-4zB" id="0jU-1K-aQu"/>
+                <outlet property="joinButton" destination="btn-join-01" id="jbn-out-01"/>
+                <outlet property="language" destination="Azy-I1-I9L" id="Bf6-MZ-Uuh"/>
+                <outlet property="memberIconImageView" destination="ico-mem-001" id="ico-out-01"/>
+                <outlet property="number" destination="Xk2-S6-JrE" id="LWS-85-Tf7"/>
+                <outlet property="theme" destination="Cfk-gf-OlC" id="ikW-Wu-dI3"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="176"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person.2" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

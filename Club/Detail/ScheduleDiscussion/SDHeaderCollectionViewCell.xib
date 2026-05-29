@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AkM-mt-Rcs" customClass="SDHeaderCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaR-JR-dGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <color key="backgroundColor" red="0.71625198998809714" green="0.35284156279134343" blue="0.73916015624999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Deep Dive: The Castle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37P-TP-uag">
+                        <rect key="frame" x="20" y="110" width="294.66666666666669" height="28.666666666666657"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Nh0-ds-wDa"/>
+            <constraints>
+                <constraint firstItem="37P-TP-uag" firstAttribute="top" secondItem="AkM-mt-Rcs" secondAttribute="top" constant="110" id="4yS-X5-NsO"/>
+                <constraint firstItem="uaR-JR-dGM" firstAttribute="leading" secondItem="AkM-mt-Rcs" secondAttribute="leading" id="AF7-fP-wSJ"/>
+                <constraint firstAttribute="bottom" secondItem="uaR-JR-dGM" secondAttribute="bottom" id="OC1-q0-jOu"/>
+                <constraint firstItem="uaR-JR-dGM" firstAttribute="top" secondItem="AkM-mt-Rcs" secondAttribute="top" id="XQr-nn-Nm6"/>
+                <constraint firstAttribute="trailing" secondItem="uaR-JR-dGM" secondAttribute="trailing" id="gco-fc-wvJ"/>
+                <constraint firstItem="37P-TP-uag" firstAttribute="leading" secondItem="AkM-mt-Rcs" secondAttribute="leading" constant="20" id="wHL-hK-tUB"/>
+            </constraints>
+            <connections>
+                <outlet property="TitleLabel" destination="37P-TP-uag" id="tpY-bg-FMu"/>
+                <outlet property="gradientView" destination="uaR-JR-dGM" id="QUM-d4-WgE"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="129"/>
+        </collectionViewCell>
+    </objects>
+</document>

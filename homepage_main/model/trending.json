@@ -1,0 +1,54 @@
+{
+  "title": "Trending Books",
+  "trending_books": [
+    {
+      "id": "b1",
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "cover_image": "image1",
+      "category": "classics"
+    },
+    {
+      "id": "b2",
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "cover_image": "image2",
+      "category": "classics"
+    },
+    {
+      "id": "b3",
+      "title": "Meditations",
+      "author": "Marcus Aurelius",
+      "cover_image": "image3",
+      "category": "classics"
+    },
+    {
+      "id": "b4",
+      "title": "1984",
+      "author": "George Orwell",
+      "cover_image": "image4",
+      "category": "classics"
+    },
+    {
+      "id": "b5",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "cover_image": "image5",
+      "category": "classics"
+    },
+    {
+      "id": "b6",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "cover_image": "image6",
+      "category": "classics"
+    },
+    {
+      "id": "b7",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "cover_image": "image7",
+      "category": "classics"
+    }
+  ]
+}

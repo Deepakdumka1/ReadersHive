@@ -1,0 +1,107 @@
+[
+    {
+        "id": 101,
+        "otherUserName": "David Max",
+        "avatarImage": "user_image5",
+        "messages": [
+            {
+                "id": 1,
+                "senderID": 2,
+                "content": "Hey!!",
+                "timestamp": "1:30 PM",
+                "isRead": true
+            },
+            {
+                "id": 2,
+                "senderID": 1,
+                "content": "Hi",
+                "timestamp": "1:31 PM",
+                "isRead": true
+            },
+            {
+                "id": 3,
+                "senderID": 2,
+                "content": "Do you some good book recommendation ??",
+                "timestamp": "1:32 PM",
+                "isRead": true
+            },
+            {
+                "id": 4,
+                "senderID": 1,
+                "content": "Try this book called 'Empire of Storms'.",
+                "timestamp": "1:35 PM",
+                "isRead": true
+            },
+            {
+                "id": 5,
+                "senderID": 1,
+                "content": "You won't regret it!!",
+                "timestamp": "1:35 PM",
+                "isRead": true
+            },
+            {
+                "id": 6,
+                "senderID": 2,
+                "content": "That book recommendation was spot on.",
+                "timestamp": "1:39 PM",
+                "isRead": false
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "otherUserName": "Marcus Aurelius",
+        "avatarImage": "user_image2",
+        "messages": [
+            {
+                "id": 7,
+                "senderID": 3,
+                "content": "Are we still meeting for the silent reading?",
+                "timestamp": "12:35 PM",
+                "isRead": false
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "otherUserName": "Daniel Park",
+        "avatarImage": "user_image3",
+        "messages": [
+            {
+                "id": 8,
+                "senderID": 4,
+                "content": "Socrates: \"The unexamined life is not worth living.\"",
+                "timestamp": "2:14 PM",
+                "isRead": false
+            }
+        ]
+    },
+    {
+        "id": 104,
+        "otherUserName": "Julian Barnes",
+        "avatarImage": "user_image4",
+        "messages": [
+            {
+                "id": 9,
+                "senderID": 5,
+                "content": "The prose in Chapter 4 is remarkably similar to his earlier works.",
+                "timestamp": "Tuesday",
+                "isRead": true
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "otherUserName": "Sarah Miller",
+        "avatarImage": "user_image1",
+        "messages": [
+            {
+                "id": 10,
+                "senderID": 6,
+                "content": "I just finished the prologue. Wow.",
+                "timestamp": "Monday",
+                "isRead": true
+            }
+        ]
+    }
+]

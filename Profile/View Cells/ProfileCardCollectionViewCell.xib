@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfileCardCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xai-O4-ZgP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="outerVStack">
+                                <rect key="frame" x="12" y="12" width="366" height="176"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="topHStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="126"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwM-ST-z89">
+                                                <rect key="frame" x="0.0" y="23" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="img-height"/>
+                                                    <constraint firstAttribute="width" constant="80" id="img-width"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="infoVStack">
+                                                <rect key="frame" x="96" y="15" width="270" height="96.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Bruce Wayne" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaM-sM-ONz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131.66666666666666" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bruceWayne89" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdT-3Y-OeB">
+                                                        <rect key="frame" x="0.0" y="30.333333333333336" width="117" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="statsHStack">
+                                                        <rect key="frame" x="0.0" y="52.333333333333329" width="195" height="44"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-BTN-ID">
+                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="ZH4-DA-7a0"/>
+                                                                    <constraint firstAttribute="width" constant="65" id="czK-Ra-mRn"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="45"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLG-BTN-ID">
+                                                                <rect key="frame" x="130" y="0.0" width="65" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="65" id="cDk-W4-1Ue"/>
+                                                                    <constraint firstAttribute="height" constant="44" id="hpF-gd-PvB"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="37 "/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Graphic novels, manga, manhwa and a double espresso." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHs-6S-nzG">
+                                        <rect key="frame" x="0.0" y="140" width="366" height="36"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="outerVStack" secondAttribute="bottom" priority="999" constant="12" id="sv-bot"/>
+                            <constraint firstItem="outerVStack" firstAttribute="leading" secondItem="xai-O4-ZgP" secondAttribute="leading" constant="12" id="sv-lead"/>
+                            <constraint firstItem="outerVStack" firstAttribute="top" secondItem="xai-O4-ZgP" secondAttribute="top" constant="12" id="sv-top"/>
+                            <constraint firstAttribute="trailing" secondItem="outerVStack" secondAttribute="trailing" constant="12" id="sv-trail"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xai-O4-ZgP" secondAttribute="bottom" id="c-bot"/>
+                <constraint firstItem="xai-O4-ZgP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c-lead"/>
+                <constraint firstItem="xai-O4-ZgP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c-top"/>
+                <constraint firstAttribute="trailing" secondItem="xai-O4-ZgP" secondAttribute="trailing" id="c-trail"/>
+            </constraints>
+            <size key="customSize" width="390" height="200"/>
+            <connections>
+                <outlet property="bioLabel" destination="kHs-6S-nzG" id="BIO-OUTLET"/>
+                <outlet property="containerView" destination="xai-O4-ZgP" id="LY1-N7-Yrh"/>
+                <outlet property="followersButton" destination="FOL-BTN-ID" id="FOL-BTN-OUTLET"/>
+                <outlet property="followingButton" destination="FLG-BTN-ID" id="FLG-BTN-OUTLET"/>
+                <outlet property="nameLabel" destination="uaM-sM-ONz" id="NAME-OUTLET"/>
+                <outlet property="profileImageView" destination="LwM-ST-z89" id="IMG-OUTLET"/>
+                <outlet property="usernameLabel" destination="bdT-3Y-OeB" id="vrg-aQ-BMD"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="200"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

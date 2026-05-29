@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PEU-Ec-95z" customClass="SectionHeaderViewClubDetailCollectionReusableView" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-fW-nag">
+                    <rect key="frame" x="20.000000000000007" y="14.333333333333334" width="107.66666666666669" height="21.666666666666664"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.12" green="0.12" blue="0.17999999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p76-Hs-47M">
+                    <rect key="frame" x="293" y="11" width="62" height="28"/>
+                    <color key="backgroundColor" red="0.22" green="0.34999999999999998" blue="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="c48-uf-xB4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="6" maxX="12" maxY="6"/>
+                    <state key="normal" title="+ New">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iku-Hk-S8d"/>
+            <constraints>
+                <constraint firstItem="uhl-fW-nag" firstAttribute="centerY" secondItem="PEU-Ec-95z" secondAttribute="centerY" id="4UV-th-IF7"/>
+                <constraint firstItem="p76-Hs-47M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uhl-fW-nag" secondAttribute="trailing" constant="8" id="Etv-vF-Xvh"/>
+                <constraint firstItem="uhl-fW-nag" firstAttribute="leading" secondItem="PEU-Ec-95z" secondAttribute="leading" constant="20" id="HyB-q7-Wk4"/>
+                <constraint firstItem="p76-Hs-47M" firstAttribute="centerY" secondItem="PEU-Ec-95z" secondAttribute="centerY" id="Wev-XW-RaE"/>
+                <constraint firstAttribute="trailing" secondItem="p76-Hs-47M" secondAttribute="trailing" constant="20" id="g8I-Y9-FNh"/>
+            </constraints>
+            <connections>
+                <outlet property="actionButton" destination="p76-Hs-47M" id="guC-pa-7Ad"/>
+                <outlet property="titleLabel" destination="uhl-fW-nag" id="eUd-ho-fkC"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </collectionReusableView>
+    </objects>
+</document>

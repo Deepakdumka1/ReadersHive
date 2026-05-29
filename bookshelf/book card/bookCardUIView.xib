@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookPresentationViewController" customModule="Club" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="close-btn-id" id="NMo-ad-hsr"/>
+                <outlet property="shareButton" destination="share-btn-id" id="2eL-nB-aKS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="bookCardUIView" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="close-btn-id">
+                    <rect key="frame" x="20" y="138" width="44" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5LS-Tp-5tx"/>
+                        <constraint firstAttribute="width" constant="44" id="FQZ-ey-Ipm"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cardCloseTapped:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="mVT-UZ-1vg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="share-btn-id">
+                    <rect key="frame" x="329" y="138" width="44" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rVr-pF-3Ez"/>
+                        <constraint firstAttribute="width" constant="44" id="zGd-Z1-fat"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empire of Storms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title-label-id">
+                    <rect key="frame" x="24" y="454" width="345" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="A0x-pC-9zj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maaza Mengiste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="author-label-id">
+                    <rect key="frame" x="36" y="490" width="321" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="r3A-Og-U3u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="genres-stack-id">
+                    <rect key="frame" x="32" y="534" width="329" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="genre-btn1-id">
+                            <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="44"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Fantasy" cornerStyle="fixed">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="strokeColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                <directionalEdgeInsets key="contentInsets" top="10" leading="16" bottom="10" trailing="16"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="genre-btn2-id">
+                            <rect key="frame" x="113.33333333333334" y="0.0" width="102.33333333333334" height="44"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Romance" cornerStyle="fixed">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="strokeColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                <directionalEdgeInsets key="contentInsets" top="10" leading="16" bottom="10" trailing="16"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="genre-btn3-id">
+                            <rect key="frame" x="226.66666666666671" y="0.0" width="102.33333333333334" height="44"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Sci-Fi" cornerStyle="fixed">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="strokeColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                <directionalEdgeInsets key="contentInsets" top="10" leading="16" bottom="10" trailing="16"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="331" id="0N4-dG-oGF"/>
+                        <constraint firstAttribute="width" constant="330" id="BoU-pb-Cjy"/>
+                        <constraint firstAttribute="height" constant="44" id="SRx-Xb-oCP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0N4-dG-oGF"/>
+                        </mask>
+                    </variation>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-pC-7jJ">
+                    <rect key="frame" x="37" y="594" width="324" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="T2U-eJ-LEm"/>
+                        <constraint firstAttribute="height" constant="60" id="cA7-c1-eSa"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.down.circle" catalog="system" imagePlacement="trailing" title="Currently Reading" imagePadding="12" cornerStyle="fixed">
+                        <backgroundConfiguration key="background" cornerRadius="18">
+                            <color key="strokeColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <directionalEdgeInsets key="contentInsets" top="14" leading="24" bottom="14" trailing="24"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="arrow-img-id">
+                    <rect key="frame" x="180" y="759.33333333333337" width="53" height="20"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DFe-Hu-Pvu"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cover-img-id">
+                    <rect key="frame" x="68" y="92" width="257" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="eSl-R6-wfc"/>
+                        <constraint firstAttribute="width" constant="200" id="pUL-D5-jmO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.61176470588235299" green="0.41568627450980389" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="close-btn-id" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0RW-v8-7St"/>
+                <constraint firstItem="close-btn-id" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1iC-5I-6bu"/>
+                <constraint firstItem="JRt-pC-7jJ" firstAttribute="top" secondItem="genres-stack-id" secondAttribute="bottom" constant="16" id="6iw-NQ-wi6"/>
+                <constraint firstItem="share-btn-id" firstAttribute="leading" secondItem="cover-img-id" secondAttribute="trailing" constant="4" id="9lv-Nl-Sww"/>
+                <constraint firstItem="title-label-id" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Cdk-zG-0nt"/>
+                <constraint firstItem="genres-stack-id" firstAttribute="top" secondItem="author-label-id" secondAttribute="bottom" constant="20" id="Dr9-mS-FnA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="share-btn-id" secondAttribute="trailing" constant="20" id="Drd-fm-TDg"/>
+                <constraint firstItem="share-btn-id" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Hte-bc-sli"/>
+                <constraint firstItem="title-label-id" firstAttribute="top" secondItem="cover-img-id" secondAttribute="bottom" constant="12" id="JJE-FU-lJM"/>
+                <constraint firstItem="JRt-pC-7jJ" firstAttribute="leading" secondItem="genres-stack-id" secondAttribute="leading" constant="1" id="Jjh-Qj-24F"/>
+                <constraint firstItem="cover-img-id" firstAttribute="leading" secondItem="close-btn-id" secondAttribute="trailing" constant="4" id="OJd-x5-3EI"/>
+                <constraint firstItem="arrow-img-id" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="180" id="WNg-dc-WF7"/>
+                <constraint firstItem="JRt-pC-7jJ" firstAttribute="top" secondItem="genres-stack-id" secondAttribute="bottom" constant="16" id="Wrz-il-jsy"/>
+                <constraint firstItem="author-label-id" firstAttribute="top" secondItem="title-label-id" secondAttribute="bottom" constant="4" id="XpW-SV-WvQ"/>
+                <constraint firstItem="arrow-img-id" firstAttribute="top" secondItem="JRt-pC-7jJ" secondAttribute="bottom" constant="100" id="YQQ-se-xVN"/>
+                <constraint firstItem="arrow-img-id" firstAttribute="top" secondItem="JRt-pC-7jJ" secondAttribute="bottom" constant="100" id="bjr-Wi-Zuq"/>
+                <constraint firstItem="JRt-pC-7jJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="bvr-6d-EJk"/>
+                <constraint firstItem="genres-stack-id" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="f7z-ef-zs3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JRt-pC-7jJ" secondAttribute="trailing" constant="17" id="gKY-2F-CVY"/>
+                <constraint firstItem="arrow-img-id" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kEG-h4-IFk"/>
+                <constraint firstItem="author-label-id" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="l4y-10-Qrg"/>
+                <constraint firstItem="JRt-pC-7jJ" firstAttribute="centerX" secondItem="arrow-img-id" secondAttribute="centerX" id="rK1-ML-yqk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="author-label-id" secondAttribute="trailing" constant="36" id="rxk-Kw-y6r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="title-label-id" secondAttribute="trailing" constant="24" id="uhM-TU-Ihi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="genres-stack-id" secondAttribute="trailing" constant="32" id="vdE-vK-t1s"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Jjh-Qj-24F"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="Booklist" destination="JRt-pC-7jJ" id="60y-7Q-ONj"/>
+                <outlet property="authorLabel" destination="author-label-id" id="5AZ-cy-brR"/>
+                <outlet property="coverImageView" destination="cover-img-id" id="SBe-Bl-lP1"/>
+                <outlet property="fantasy" destination="genre-btn1-id" id="HPR-iA-REb"/>
+                <outlet property="romance" destination="genre-btn2-id" id="GF4-wp-i15"/>
+                <outlet property="scifi" destination="genre-btn3-id" id="hC4-b7-0fh"/>
+                <outlet property="titleLabel" destination="title-label-id" id="cpy-sE-Rhw"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.down.circle" catalog="system" width="128" height="123"/>
+        <image name="square.and.arrow.up" catalog="system" width="110" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

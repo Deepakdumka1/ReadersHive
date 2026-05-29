@@ -1,0 +1,290 @@
+{
+  "clubs": [
+    {
+      "id": "club_1",
+      "name": "Kafka Circle",
+      "category": "dark",
+      "description": "For readers who seek meaning in the chaos",
+      "image_path": "kafka_circle",
+      "member_count": 928,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "admin"
+        },
+        {
+          "user_id": "user_2",
+          "role": "member"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_2",
+      "name": "Poetry Collective",
+      "category": "poetry",
+      "description": "Words that breathe.",
+      "image_path": "club_banner_2",
+      "member_count": 853,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_3",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_7",
+      "name": "Austen House",
+      "category": "classics",
+      "description": "A space for book lovers to share thoughts, quotes, and weekend reads.",
+      "image_path": "club_banner_1",
+      "member_count": 928,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_4",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_8",
+      "name": "Moral Dilemmas",
+      "category": "philosophy",
+      "description": "Elegance, wit, and romance \u2014 always.",
+      "image_path": "joined",
+      "member_count": 612,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_5",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_9",
+      "name": "Hidden Tides",
+      "category": "classics",
+      "description": "A space for book lovers to share thoughts and quotes.",
+      "image_path": "club_banner_3",
+      "member_count": 745,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_6",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_10",
+      "name": "Sure Line Mystery",
+      "category": "dark",
+      "description": "Elegance, wit, and romance.",
+      "image_path": "club_banner_4",
+      "member_count": 530,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_7",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_11",
+      "name": "HeartFelt Journey",
+      "category": "poetry",
+      "description": "Exploring magical realms and deep mysteries.",
+      "image_path": "club_banner_5",
+      "member_count": 410,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "temp_user_1",
+          "role": "member"
+        },
+        {
+          "user_id": "user_8",
+          "role": "admin"
+        }
+      ],
+      "section": "my_clubs"
+    },
+    {
+      "id": "club_3",
+      "name": "Tolkien Fellowship",
+      "category": "fantasy",
+      "description": "For readers who seek meaning in the chaos",
+      "image_path": "club_banner_3",
+      "member_count": 928,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_9",
+          "role": "admin"
+        },
+        {
+          "user_id": "user_10",
+          "role": "member"
+        }
+      ],
+      "section": "recommended"
+    },
+    {
+      "id": "club_4",
+      "name": "Dark Academia",
+      "category": "philosophy",
+      "description": "Words that breathe.",
+      "image_path": "club_banner_4",
+      "member_count": 853,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_11",
+          "role": "admin"
+        }
+      ],
+      "section": "recommended"
+    },
+    {
+      "id": "club_5",
+      "name": "Austen House",
+      "category": "classics",
+      "description": "Elegance, wit, and romance \u2014 always.",
+      "image_path": "joined",
+      "member_count": 928,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_12",
+          "role": "admin"
+        }
+      ],
+      "section": "recommended"
+    },
+    {
+      "id": "club_6",
+      "name": "Kafka's Work",
+      "category": "dark",
+      "description": "For readers who seek meaning in the chaos",
+      "image_path": "club_banner_5",
+      "member_count": 853,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_13",
+          "role": "admin"
+        }
+      ],
+      "section": "recommended"
+    },
+    {
+      "id": "club_12",
+      "name": "Austen House",
+      "category": "classics",
+      "description": "Elegance, wit, and romance \u2014 always.",
+      "image_path": "joined",
+      "member_count": 928,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_14",
+          "role": "admin"
+        }
+      ],
+      "section": "trending"
+    },
+    {
+      "id": "club_13",
+      "name": "Kafka's Work",
+      "category": "dark",
+      "description": "For readers who seek meaning in the chaos",
+      "image_path": "club_banner_1",
+      "member_count": 853,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_15",
+          "role": "admin"
+        }
+      ],
+      "section": "trending"
+    },
+    {
+      "id": "club_14",
+      "name": "Fully Booked",
+      "category": "classics",
+      "description": "A space for avid readers and collectors.",
+      "image_path": "club_banner_2",
+      "member_count": 720,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_16",
+          "role": "admin"
+        }
+      ],
+      "section": "trending"
+    },
+    {
+      "id": "club_15",
+      "name": "Midnight Pages",
+      "category": "dark",
+      "description": "Late-night reading for the restless mind.",
+      "image_path": "kafka_circle",
+      "member_count": 645,
+      "language": "English",
+      "members": [
+        {
+          "user_id": "user_17",
+          "role": "admin"
+        }
+      ],
+      "section": "trending"
+    }
+  ],
+  "total_count": 15,
+  "categories": [
+    "dark",
+    "poetry",
+    "fantasy",
+    "philosophy",
+    "classics"
+  ],
+  "sections": [
+    "my_clubs",
+    "recommended",
+    "trending"
+  ],
+  "generated_at": "2026-02-11 23:30:00"
+}

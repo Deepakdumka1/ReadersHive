@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="club_cell" id="7tC-w2-nXf" customClass="ChatRoomCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l88-lQ-WVf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-h6-OKS">
+                        <rect key="frame" x="20" y="4" width="335" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU8-KR-9h7">
+                                <rect key="frame" x="14" y="12" width="40" height="40"/>
+                                <subviews>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-2a-Zck">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                        <color key="tintColor" red="0.45000000000000001" green="0.45000000000000001" blue="0.55000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="4hh-v5-FlL"/>
+                                            <constraint firstAttribute="height" constant="20" id="Hce-1h-ljX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93999999999999995" green="0.93999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kn0-zL-f0s"/>
+                                    <constraint firstAttribute="width" constant="40" id="Vs2-MM-fIO"/>
+                                    <constraint firstItem="Mct-2a-Zck" firstAttribute="centerX" secondItem="dU8-KR-9h7" secondAttribute="centerX" id="iq7-Zg-t0k"/>
+                                    <constraint firstItem="Mct-2a-Zck" firstAttribute="centerY" secondItem="dU8-KR-9h7" secondAttribute="centerY" id="scH-bN-RSY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLJ-sm-cfD">
+                                <rect key="frame" x="66" y="23" width="75" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.14999999999999999" green="0.14999999999999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-ec-a9u">
+                                <rect key="frame" x="309" y="24" width="12" height="16"/>
+                                <color key="tintColor" red="0.69999999999999996" green="0.69999999999999996" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="O1t-33-nvh"/>
+                                    <constraint firstAttribute="height" constant="16" id="yRO-5F-PSD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7X7-ec-a9u" secondAttribute="trailing" constant="14" id="CWy-xy-3mD"/>
+                            <constraint firstItem="bLJ-sm-cfD" firstAttribute="centerY" secondItem="LZV-h6-OKS" secondAttribute="centerY" id="Enc-bF-AoT"/>
+                            <constraint firstItem="bLJ-sm-cfD" firstAttribute="leading" secondItem="dU8-KR-9h7" secondAttribute="trailing" constant="12" id="F1v-vq-fhd"/>
+                            <constraint firstItem="dU8-KR-9h7" firstAttribute="centerY" secondItem="LZV-h6-OKS" secondAttribute="centerY" id="ZXC-6c-dYl"/>
+                            <constraint firstItem="7X7-ec-a9u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bLJ-sm-cfD" secondAttribute="trailing" constant="8" id="aKi-B2-6cV"/>
+                            <constraint firstItem="dU8-KR-9h7" firstAttribute="leading" secondItem="LZV-h6-OKS" secondAttribute="leading" constant="14" id="eXm-Z7-aMw"/>
+                            <constraint firstItem="7X7-ec-a9u" firstAttribute="centerY" secondItem="LZV-h6-OKS" secondAttribute="centerY" id="y1W-KQ-rrU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LZV-h6-OKS" secondAttribute="trailing" constant="20" id="6f1-ry-YaN"/>
+                    <constraint firstItem="LZV-h6-OKS" firstAttribute="leading" secondItem="l88-lQ-WVf" secondAttribute="leading" constant="20" id="Eq9-Y3-ICD"/>
+                    <constraint firstItem="LZV-h6-OKS" firstAttribute="top" secondItem="l88-lQ-WVf" secondAttribute="top" constant="4" id="Ou3-f6-aQz"/>
+                    <constraint firstAttribute="bottom" secondItem="LZV-h6-OKS" secondAttribute="bottom" constant="4" id="Rn8-Yn-EDA"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aC4-CR-6A2"/>
+            <size key="customSize" width="375" height="72"/>
+            <connections>
+                <outlet property="chevronImageView" destination="7X7-ec-a9u" id="qCO-dw-nm3"/>
+                <outlet property="containerView" destination="LZV-h6-OKS" id="URF-yQ-hbl"/>
+                <outlet property="iconContainer" destination="dU8-KR-9h7" id="Xtw-Ho-hwO"/>
+                <outlet property="iconImageView" destination="Mct-2a-Zck" id="Psf-mf-6Xk"/>
+                <outlet property="titleLabel" destination="bLJ-sm-cfD" id="i4H-r0-FU9"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="76.760563380281695"/>
+        </collectionViewCell>
+    </objects>
+</document>

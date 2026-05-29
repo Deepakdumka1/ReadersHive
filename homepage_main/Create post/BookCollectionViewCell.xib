@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vw-container">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="img-cover">
+                                <rect key="frame" x="16" y="5" width="60" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0Sh-E6-UoH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="7hL-zD-ylZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="fSK-Gj-9xl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-title">
+                                <rect key="frame" x="101" y="18" width="34.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-author">
+                                <rect key="frame" x="101" y="46" width="154" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="9Sd-ry-7z1"/>
+                                    <constraint firstAttribute="height" constant="17" id="bhj-XP-07f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="img-cover" firstAttribute="leading" secondItem="vw-container" secondAttribute="leading" constant="16" id="Gr5-rB-IoN"/>
+                            <constraint firstItem="img-cover" firstAttribute="centerY" secondItem="vw-container" secondAttribute="centerY" id="OIi-bk-Vfs"/>
+                            <constraint firstItem="lbl-title" firstAttribute="leading" secondItem="img-cover" secondAttribute="trailing" constant="25" id="THi-cA-2LC"/>
+                            <constraint firstItem="lbl-title" firstAttribute="leading" secondItem="img-cover" secondAttribute="trailing" constant="25" id="UuU-n9-8nD"/>
+                            <constraint firstItem="img-cover" firstAttribute="top" secondItem="vw-container" secondAttribute="top" constant="5" id="YAg-tT-Pmh"/>
+                            <constraint firstItem="img-cover" firstAttribute="top" secondItem="vw-container" secondAttribute="top" constant="5" id="c3J-va-34E"/>
+                            <constraint firstItem="img-cover" firstAttribute="leading" secondItem="vw-container" secondAttribute="leading" constant="16" id="cOc-iN-4P8"/>
+                            <constraint firstItem="lbl-title" firstAttribute="top" secondItem="vw-container" secondAttribute="top" constant="18" id="fvQ-L5-AA4"/>
+                            <constraint firstItem="lbl-author" firstAttribute="top" secondItem="lbl-title" secondAttribute="bottom" constant="7.6666666666666714" id="hdp-bk-lUg"/>
+                            <constraint firstItem="lbl-author" firstAttribute="leading" secondItem="lbl-title" secondAttribute="leading" id="kpx-qI-BEj"/>
+                            <constraint firstAttribute="bottom" secondItem="img-cover" secondAttribute="bottom" constant="5" id="mOo-7e-Bet"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vw-container" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Av9-aD-AKe"/>
+                <constraint firstItem="vw-container" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="I0h-T5-g17"/>
+                <constraint firstItem="vw-container" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W3t-vb-xQn"/>
+                <constraint firstItem="vw-container" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XN3-Ga-PWi"/>
+            </constraints>
+            <size key="customSize" width="340" height="90"/>
+            <connections>
+                <outlet property="authorName" destination="lbl-author" id="Seg-70-SL7"/>
+                <outlet property="bookTitle" destination="lbl-title" id="j6c-wF-MJg"/>
+                <outlet property="imageView" destination="img-cover" id="MRl-t0-HEO"/>
+            </connections>
+            <point key="canvasLocation" x="65.648854961832058" y="32.394366197183103"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

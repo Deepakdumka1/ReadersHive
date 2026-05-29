@@ -1,0 +1,99 @@
+//{
+//  "allBooks": [
+//    { "id": "1", "title": "Deep Work", "author": "Cal Newport", "coverImageName": "deep_work", "description": "Focus without distraction." },
+//    { "id": "2", "title": "The Psychology ", "author": "Morgan Housel", "coverImageName": "psychology_money", "description": "Timeless lessons on wealth." },
+//    { "id": "3", "title": "The Midnight Library", "author": "Matt Haig", "coverImageName": "midnight_library", "description": "Life choices and alternate realities." },
+//    { "id": "4", "title": "The Subtle Art of Not Giving a F*ck", "author": "Mark Manson", "coverImageName": "subtle_art", "description": "Counterintuitive approach to life." },
+//    { "id": "5", "title": "Ikigai", "author": "Héctor García", "coverImageName": "ikigai", "description": "Japanese secret to happiness." },
+//    { "id": "6", "title": "The Lean Startup", "author": "Eric Ries", "coverImageName": "lean_startup", "description": "Build successful startups." },
+//    { "id": "7", "title": "Start With Why", "author": "Simon Sinek", "coverImageName": "start_with_why", "description": "Inspire action." },
+//    { "id": "8", "title": "The Four Agreements", "author": "Don Miguel Ruiz", "coverImageName": "four_agreements", "description": "Personal freedom guide." },
+//    { "id": "9", "title": "Can't Hurt Me", "author": "David Goggins", "coverImageName": "cant_hurt_me", "description": "Master your mind." },
+//    { "id": "10", "title": "The Mountain Is You", "author": "Brianna Wiest", "coverImageName": "mountain_is_you", "description": "Self-mastery." },
+//
+//    { "id": "11", "title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "coverImageName": "rich_dad", "description": "Financial mindset." },
+//    { "id": "12", "title": "Zero to One", "author": "Peter Thiel", "coverImageName": "zero_to_one", "description": "Startup future." },
+//    { "id": "13", "title": "The Power of Now", "author": "Eckhart Tolle", "coverImageName": "power_now", "description": "Spiritual enlightenment." },
+//    { "id": "14", "title": "The 5 AM Club", "author": "Robin Sharma", "coverImageName": "5am_club", "description": "Morning routine mastery." },
+//    { "id": "15", "title": "The Compound Effect", "author": "Darren Hardy", "coverImageName": "compound_effect", "description": "Consistency leads to results." },
+//    { "id": "16", "title": "Mindset", "author": "Carol Dweck", "coverImageName": "mindset", "description": "Growth mindset." },
+//    { "id": "17", "title": "Crushing It!", "author": "Gary Vaynerchuk", "coverImageName": "crushing_it", "description": "Build personal brand." },
+//    { "id": "18", "title": "The Code Breaker", "author": "Walter Isaacson", "coverImageName": "code_breaker", "description": "DNA revolution." },
+//    { "id": "19", "title": "Grit", "author": "Angela Duckworth", "coverImageName": "grit", "description": "Passion and perseverance." },
+//    { "id": "20", "title": "The Art of War", "author": "Sun Tzu", "coverImageName": "art_of_war", "description": "Strategy and leadership." },
+//
+//    { "id": "21", "title": "Atomic Habits", "author": "James Clear", "coverImageName": "atomic_habits", "description": "Build habits." },
+//    { "id": "22", "title": "1984", "author": "George Orwell", "coverImageName": "1984", "description": "Dystopian world." },
+//    { "id": "23", "title": "Sapiens", "author": "Yuval Noah Harari", "coverImageName": "sapiens", "description": "Human history." },
+//    { "id": "24", "title": "The Alchemist", "author": "Paulo Coelho", "coverImageName": "alchemist", "description": "Follow dreams." },
+//    { "id": "25", "title": "The Hobbit", "author": "J.R.R. Tolkien", "coverImageName": "hobbit", "description": "Adventure story." },
+//    { "id": "26", "title": "Educated", "author": "Tara Westover", "coverImageName": "educated", "description": "Memoir." },
+//    { "id": "27", "title": "The Silent Patient", "author": "Alex Michaelides", "coverImageName": "silent_patient", "description": "Thriller." },
+//    { "id": "28", "title": "The Martian", "author": "Andy Weir", "coverImageName": "martian", "description": "Mars survival." },
+//    { "id": "29", "title": "The Night Circus", "author": "Erin Morgenstern", "coverImageName": "night_circus", "description": "Magical competition." },
+//    { "id": "30", "title": "Gone Girl", "author": "Gillian Flynn", "coverImageName": "gone_girl", "description": "Mystery thriller." },
+//
+//    { "id": "31", "title": "Think and Grow Rich", "author": "Napoleon Hill", "coverImageName": "think_grow_rich", "description": "Success mindset." },
+//    { "id": "32", "title": "7 Habits of Highly Effective People", "author": "Stephen Covey", "coverImageName": "7_habits", "description": "Personal effectiveness." },
+//    { "id": "33", "title": "Outliers", "author": "Malcolm Gladwell", "coverImageName": "outliers", "description": "Success stories." },
+//    { "id": "34", "title": "Blink", "author": "Malcolm Gladwell", "coverImageName": "blink", "description": "Thinking without thinking." },
+//    { "id": "35", "title": "Rework", "author": "Jason Fried", "coverImageName": "rework", "description": "Business rethink." },
+//    { "id": "36", "title": "Hooked", "author": "Nir Eyal", "coverImageName": "hooked", "description": "Habit-forming products." },
+//    { "id": "37", "title": "Drive", "author": "Daniel Pink", "coverImageName": "drive", "description": "Motivation science." },
+//    { "id": "38", "title": "Essentialism", "author": "Greg McKeown", "coverImageName": "essentialism", "description": "Focus on what matters." },
+//    { "id": "39", "title": "The One Thing", "author": "Gary Keller", "coverImageName": "one_thing", "description": "Focus principle." },
+//    { "id": "40", "title": "Deep Thinking", "author": "Garry Kasparov", "coverImageName": "deep_thinking", "description": "AI and chess." },
+//
+//    { "id": "41", "title": "Clean Code", "author": "Robert C. Martin", "coverImageName": "clean_code", "description": "Write better code." },
+//    { "id": "42", "title": "The Pragmatic Programmer", "author": "Andrew Hunt", "coverImageName": "pragmatic_programmer", "description": "Software craftsmanship." },
+//    { "id": "43", "title": "Design Patterns", "author": "GoF", "coverImageName": "design_patterns", "description": "Reusable solutions." },
+//    { "id": "44", "title": "Refactoring", "author": "Martin Fowler", "coverImageName": "refactoring", "description": "Improve code structure." },
+//    { "id": "45", "title": "Grokking Algorithms", "author": "Aditya Bhargava", "coverImageName": "grokking_algo", "description": "Visual algorithms." },
+//    { "id": "46", "title": "CLRS", "author": "Thomas Cormen", "coverImageName": "clrs", "description": "Algorithm bible." },
+//    { "id": "47", "title": "Eloquent JavaScript", "author": "Marijn Haverbeke", "coverImageName": "eloquent_js", "description": "Modern JS guide." },
+//    { "id": "48", "title": "You Don’t Know JS", "author": "Kyle Simpson", "coverImageName": "ydkjs", "description": "JS deep dive." },
+//    { "id": "49", "title": "Hard Thing About Hard Things", "author": "Ben Horowitz", "coverImageName": "hard_things", "description": "Startup challenges." },
+//    { "id": "50", "title": "Measure What Matters", "author": "John Doerr", "coverImageName": "measure_matters", "description": "OKRs explained." },
+//
+//    { "id": "51", "title": "Good to Great", "author": "Jim Collins", "coverImageName": "good_to_great", "description": "Company growth." },
+//    { "id": "52", "title": "Built to Last", "author": "Jim Collins", "coverImageName": "built_to_last", "description": "Visionary companies." },
+//    { "id": "53", "title": "Innovator’s Dilemma", "author": "Clayton Christensen", "coverImageName": "innovators_dilemma", "description": "Disruption." },
+//    { "id": "54", "title": "Thinking Fast and Slow", "author": "Daniel Kahneman", "coverImageName": "thinking_fast_slow", "description": "How we think." },
+//    { "id": "55", "title": "Black Swan", "author": "Nassim Taleb", "coverImageName": "black_swan", "description": "Rare events." },
+//    { "id": "56", "title": "Antifragile", "author": "Nassim Taleb", "coverImageName": "antifragile", "description": "Gain from disorder." },
+//    { "id": "57", "title": "Shoe Dog", "author": "Phil Knight", "coverImageName": "shoe_dog", "description": "Nike story." },
+//    { "id": "58", "title": "Steve Jobs", "author": "Walter Isaacson", "coverImageName": "steve_jobs", "description": "Biography." },
+//    { "id": "59", "title": "Hooked Model", "author": "Nir Eyal", "coverImageName": "hooked_model", "description": "Behavior design." },
+//    { "id": "60", "title": "Atomic Focus", "author": "Unknown", "coverImageName": "atomic_focus", "description": "Focus techniques." }
+//  ],
+//
+//  "sections": [
+//    {
+//      "shelfType": "currentlyReading",
+//      "title": "Currently Reading",
+//      "isPrivate": false,
+//      "books": [
+//        { "id": "1" }, { "id": "2" }, { "id": "3" },
+//        { "id": "4" }, { "id": "5" }, { "id": "7" }, { "id": "55" }
+//      ]
+//    },
+//    {
+//      "shelfType": "wantToRead",
+//      "title": "Want To Read",
+//      "isPrivate": false,
+//      "books": [
+//        { "id": "11" }, { "id": "12" }, { "id": "13" },
+//        { "id": "14" }, { "id": "15" }, { "id": "16" }, { "id": "56" }
+//      ]
+//    },
+//    {
+//      "shelfType": "finished",
+//      "title": "Finished",
+//      "isPrivate": false,
+//      "books": [
+//        { "id": "21" }, { "id": "22" }, { "id": "23" },
+//        { "id": "24" }, { "id": "25" }, { "id": "26" }, { "id": "60" }
+//      ]
+//    }
+//  ]
+//}

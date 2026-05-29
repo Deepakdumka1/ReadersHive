@@ -1,0 +1,700 @@
+{
+  "clubDetails": {
+    "club_1": {
+      "admins": [
+        "user_1",
+        "user_1"
+      ],
+      "coAdmins": [
+        "user_2"
+      ],
+      "chatRooms": [
+        {
+          "id": "chat1",
+          "club_id": "club_1",
+          "title": "Intro",
+          "icon": "person.2.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Alice",
+              "text": "Hey everyone! Welcome to the Kafka Circle. I'm Alice, one of the admins.",
+              "time": "10:00 AM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Pawan",
+              "text": "Hi all! Excited to dive into some Kafka discussions.",
+              "time": "10:05 AM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_2",
+              "name": "Bob",
+              "text": "Great to be here. I just finished The Metamorphosis!",
+              "time": "10:10 AM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat2",
+          "club_id": "club_1",
+          "title": "Lobby",
+          "icon": "bubble.left.and.bubble.right.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Alice",
+              "text": "What's everyone reading this week?",
+              "time": "11:00 AM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_2",
+              "name": "Bob",
+              "text": "Starting The Trial tonight. Any tips?",
+              "time": "11:15 AM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat3",
+          "club_id": "club_1",
+          "title": "Deep Talk",
+          "icon": "brain.head.profile",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Pawan",
+              "text": "Does anyone think Kafka's work was autobiographical?",
+              "time": "2:00 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Alice",
+              "text": "Definitely. His relationship with his father is all over The Metamorphosis.",
+              "time": "2:05 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_2",
+              "name": "Bob",
+              "text": "The letters to Milena are so hauntingly beautiful.",
+              "time": "2:10 PM",
+              "isMine": false
+            }
+          ]
+        }
+      ],
+      "upcomingDiscussions": [
+        {
+          "id": "disc1",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Franz Kafka's The Castle is a haunting exploration of alienation, bureaucracy, and the elusive nature of authority, following the protagonist K. as he struggles to gain access to a mysterious and seemingly unreachable castle that governs the village in which he finds himself. Despite his persistent efforts, K.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://meet.google.com/abc-defg-hij"
+        },
+        {
+          "id": "disc2",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Discuss Kafka's The Castle.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "disc3",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Discuss Kafka's The Castle.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        }
+      ],
+      "posts": [
+        {
+          "id": "post1",
+          "title": "What is The Trial really about?",
+          "content": "Kafka's The Trial explores absurdity and bureaucracy...",
+          "authorName": "Alice",
+          "createdAt": "2h ago",
+          "user_id": "user_1",
+          "upvotes": 142,
+          "comment_count": 45,
+          "comments": [
+            {
+              "comment_id": "c1_p1_1",
+              "post_id": "post1",
+              "user_id": "user_2",
+              "content": "I think it is a direct critique of the Austro-Hungarian legal system of his time. The labyrinthine bureaucracy is the real antagonist.",
+              "authorName": "Bob",
+              "createdAt": "1h ago",
+              "upvotes": 34
+            },
+            {
+              "comment_id": "c1_p1_2",
+              "post_id": "post1",
+              "user_id": "user_3",
+              "content": "That makes sense historically, but the surrealism points to something deeper, like existential guilt. The court isn't a real place, it's his conscience.",
+              "authorName": "Charlie",
+              "createdAt": "45m ago",
+              "upvotes": 21
+            }
+          ]
+        },
+        {
+          "id": "post2",
+          "title": "Kafka's symbolism explained",
+          "content": "Many readers interpret Kafka's work as existential literature...",
+          "authorName": "Bob",
+          "createdAt": "5h ago",
+          "user_id": "user_2",
+          "upvotes": 89,
+          "comment_count": 23,
+          "comments": [
+            {
+              "comment_id": "c1_p2_1",
+              "post_id": "post2",
+              "user_id": "user_1",
+              "content": "The beetle in The Metamorphosis is such a powerful symbol of alienation and self-loathing.",
+              "authorName": "Alice",
+              "createdAt": "4h ago",
+              "upvotes": 18
+            },
+            {
+              "comment_id": "c1_p2_2",
+              "post_id": "post2",
+              "user_id": "user_3",
+              "content": "I always saw the doors and corridors as representing the futility of modern life.",
+              "authorName": "Charlie",
+              "createdAt": "3h ago",
+              "upvotes": 12
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "title": "newest",
+          "isSelected": true
+        },
+        {
+          "title": "popular",
+          "isSelected": false
+        }
+      ]
+    },
+    "club_2": {
+      "admins": [
+        "user_1",
+        "user_1"
+      ],
+      "coAdmins": [
+        "user_1"
+      ],
+      "chatRooms": [
+        {
+          "id": "room_voyager",
+          "club_id": "club_2",
+          "title": "Mission Control",
+          "icon": "antenna.radiowaves.left.and.right",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Dr. Sarah",
+              "text": "Latest data from the JWST is in. Check the shared folder.",
+              "time": "9:00 AM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Neil",
+              "text": "Amazing images! The galaxy formations are incredible.",
+              "time": "9:15 AM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "room_black_hole",
+          "club_id": "club_2",
+          "title": "Event Horizon",
+          "icon": "sparkles",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Buzz",
+              "text": "Has anyone read the new paper on Hawking radiation?",
+              "time": "3:00 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Dr. Sarah",
+              "text": "Yes! The implications for information paradox are huge.",
+              "time": "3:20 PM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "room_observatory",
+          "club_id": "club_2",
+          "title": "The Lens",
+          "icon": "eye.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Neil",
+              "text": "Clear skies tonight. Perfect for stargazing.",
+              "time": "7:00 PM",
+              "isMine": false
+            }
+          ]
+        }
+      ],
+      "upcomingDiscussions": [
+        {
+          "id": "event_mars",
+          "title": "Terraforming Mars: Ethics & Tech",
+          "description": "A deep dive into the logistical challenges of making the Red Planet habitable.",
+          "createdBy": "user_1",
+          "date": "Apr 12",
+          "time": "6:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "event_jwst",
+          "title": "JWST: New Galaxy Findings",
+          "description": "Reviewing the latest high-res imagery from the James Webb Space Telescope.",
+          "createdBy": "user_1",
+          "date": "Apr 15",
+          "time": "8:30 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "event_fermi",
+          "title": "The Fermi Paradox Debate",
+          "description": "If the universe is so big, where is everybody?",
+          "createdBy": "user_1",
+          "date": "Apr 20",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        }
+      ],
+      "posts": [
+        {
+          "id": "post_dark_matter",
+          "title": "Is Dark Matter just a placeholder?",
+          "content": "Exploring MOND as an alternative to the dark matter hypothesis...",
+          "authorName": "Dr. Sarah",
+          "createdAt": "45m ago",
+          "user_id": "user_1",
+          "upvotes": 67,
+          "comment_count": 18,
+          "comments": [
+            {
+              "comment_id": "c2_dm_1",
+              "post_id": "post_dark_matter",
+              "user_id": "user_2",
+              "content": "MOND works well for galaxy rotation curves but fails at cluster scales. Dark matter is still the best framework we have.",
+              "authorName": "Neil",
+              "createdAt": "30m ago",
+              "upvotes": 15
+            },
+            {
+              "comment_id": "c2_dm_2",
+              "post_id": "post_dark_matter",
+              "user_id": "user_3",
+              "content": "What about the bullet cluster? That's pretty hard evidence for dark matter being a real substance.",
+              "authorName": "Buzz",
+              "createdAt": "20m ago",
+              "upvotes": 9
+            }
+          ]
+        },
+        {
+          "id": "post_spacetime",
+          "title": "Visualizing 4D Spacetime",
+          "content": "Why the rubber sheet analogy fails us and how to better conceptualize gravity...",
+          "authorName": "Buzz",
+          "createdAt": "3h ago",
+          "user_id": "user_1",
+          "upvotes": 54,
+          "comment_count": 12,
+          "comments": [
+            {
+              "comment_id": "c2_st_1",
+              "post_id": "post_spacetime",
+              "user_id": "user_1",
+              "content": "I think the best visualization is actually the embedding diagrams from Misner, Thorne, and Wheeler.",
+              "authorName": "Dr. Sarah",
+              "createdAt": "2h ago",
+              "upvotes": 11
+            },
+            {
+              "comment_id": "c2_st_2",
+              "post_id": "post_spacetime",
+              "user_id": "user_2",
+              "content": "The rubber sheet analogy is circular - it uses gravity to explain gravity!",
+              "authorName": "Neil",
+              "createdAt": "1h ago",
+              "upvotes": 7
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "title": "trending",
+          "isSelected": false
+        },
+        {
+          "title": "recent",
+          "isSelected": true
+        }
+      ]
+    },
+    "club_7": {
+      "admins": [
+        "user_1",
+        "user_1"
+      ],
+      "coAdmins": [
+        "user_2"
+      ],
+      "chatRooms": [
+        {
+          "id": "chat1",
+          "club_id": "club_7",
+          "title": "Intro",
+          "icon": "person.2.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Alice",
+              "text": "Welcome to the club! Introduce yourselves here.",
+              "time": "9:00 AM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Pawan",
+              "text": "Hey! Looking forward to great discussions.",
+              "time": "9:30 AM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat2",
+          "club_id": "club_7",
+          "title": "Lobby",
+          "icon": "bubble.left.and.bubble.right.fill",
+          "messages": [
+            {
+              "user_id": "user_2",
+              "name": "Bob",
+              "text": "Anyone have book recommendations for this month?",
+              "time": "10:00 AM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat3",
+          "club_id": "club_7",
+          "title": "Deep Talk",
+          "icon": "brain.head.profile",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Alice",
+              "text": "Let's discuss themes of existentialism in modern fiction.",
+              "time": "4:00 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_2",
+              "name": "Bob",
+              "text": "Great topic! I think Camus is a good starting point.",
+              "time": "4:15 PM",
+              "isMine": false
+            }
+          ]
+        }
+      ],
+      "upcomingDiscussions": [
+        {
+          "id": "disc1",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Discuss Kafka's The Castle.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "disc2",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Discuss Kafka's The Castle.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "disc3",
+          "title": "Live Deep Dive: The Castle",
+          "description": "Discuss Kafka's The Castle.",
+          "createdBy": "user_1",
+          "date": "Mar 10",
+          "time": "7:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        }
+      ],
+      "posts": [
+        {
+          "id": "post1",
+          "title": "What is The Trial really about?",
+          "content": "Kafka's The Trial explores absurdity and bureaucracy...",
+          "authorName": "Alice",
+          "createdAt": "2h ago",
+          "user_id": "user_1",
+          "upvotes": 142,
+          "comment_count": 45,
+          "comments": [
+            {
+              "comment_id": "c7_p1_1",
+              "post_id": "post1",
+              "user_id": "user_2",
+              "content": "The way Josef K. never learns his crime mirrors how we feel lost in modern institutions.",
+              "authorName": "Bob",
+              "createdAt": "1h ago",
+              "upvotes": 28
+            },
+            {
+              "comment_id": "c7_p1_2",
+              "post_id": "post1",
+              "user_id": "user_3",
+              "content": "I read it as a dark comedy. The absurdity is intentionally funny in the most unsettling way.",
+              "authorName": "Pawan",
+              "createdAt": "30m ago",
+              "upvotes": 16
+            }
+          ]
+        },
+        {
+          "id": "post2",
+          "title": "Kafka's symbolism explained",
+          "content": "Many readers interpret Kafka's work as existential literature...",
+          "authorName": "Bob",
+          "createdAt": "5h ago",
+          "user_id": "user_2",
+          "upvotes": 89,
+          "comment_count": 23,
+          "comments": [
+            {
+              "comment_id": "c7_p2_1",
+              "post_id": "post2",
+              "user_id": "user_1",
+              "content": "His letters to his father are basically a roadmap to understanding every symbol in his fiction.",
+              "authorName": "Alice",
+              "createdAt": "4h ago",
+              "upvotes": 22
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "title": "newest",
+          "isSelected": true
+        },
+        {
+          "title": "popular",
+          "isSelected": false
+        }
+      ]
+    },
+    "club_3": {
+      "admins": [
+        "user_1",
+        "user_1"
+      ],
+      "coAdmins": [
+        "user_1"
+      ],
+      "chatRooms": [
+        {
+          "id": "chat_neon",
+          "club_id": "club_3",
+          "title": "The Sprawl",
+          "icon": "bolt.horizontal.circle.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Case",
+              "text": "Just jacked into the matrix. Smooth run tonight.",
+              "time": "11:00 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Molly",
+              "text": "Watch out for ICE. The corp upgraded their defenses.",
+              "time": "11:05 PM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat_matrix",
+          "club_id": "club_3",
+          "title": "ICE Breaker",
+          "icon": "lock.shield.fill",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Armitage",
+              "text": "New firmware patch is ready. Install before the next run.",
+              "time": "8:00 PM",
+              "isMine": false
+            }
+          ]
+        },
+        {
+          "id": "chat_hardware",
+          "club_id": "club_3",
+          "title": "Tech Deck",
+          "icon": "cpu",
+          "messages": [
+            {
+              "user_id": "user_1",
+              "name": "Molly",
+              "text": "Got my hands on military-grade optics. Anyone need upgrades?",
+              "time": "6:30 PM",
+              "isMine": false
+            },
+            {
+              "user_id": "user_1",
+              "name": "Case",
+              "text": "I could use a new deck. Mine is frying out.",
+              "time": "6:45 PM",
+              "isMine": false
+            }
+          ]
+        }
+      ],
+      "upcomingDiscussions": [
+        {
+          "id": "disc_neuro",
+          "title": "Neural Interfaces: 2026",
+          "description": "Analyzing the progress of direct-to-brain computing and the 'Gray Space'.",
+          "createdBy": "user_1",
+          "date": "May 05",
+          "time": "11:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "disc_city",
+          "title": "Cyberpunk Architecture",
+          "description": "How real-world megacities are starting to mirror Gibson's visions.",
+          "createdBy": "user_1",
+          "date": "May 12",
+          "time": "9:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        },
+        {
+          "id": "disc_synth",
+          "title": "The AI Rights Movement",
+          "description": "A debate on sentience in Large Language Models and virtual entities.",
+          "createdBy": "user_1",
+          "date": "May 18",
+          "time": "10:00 PM",
+          "meeting_link": "https://zoom.us/j/123456789"
+        }
+      ],
+      "posts": [
+        {
+          "id": "post_monomolecular",
+          "title": "The physics of 'Mono-wires'",
+          "content": "Why monomolecular filaments are a staple of the genre but a nightmare for engineering...",
+          "authorName": "Molly",
+          "createdAt": "1h ago",
+          "user_id": "user_1",
+          "upvotes": 31,
+          "comment_count": 9,
+          "comments": [
+            {
+              "comment_id": "c3_mw_1",
+              "post_id": "post_monomolecular",
+              "user_id": "user_2",
+              "content": "Carbon nanotubes are the closest real-world analog. Still far from mono-wire territory though.",
+              "authorName": "Case",
+              "createdAt": "45m ago",
+              "upvotes": 8
+            },
+            {
+              "comment_id": "c3_mw_2",
+              "post_id": "post_monomolecular",
+              "user_id": "user_3",
+              "content": "The real question is how you'd handle one without slicing yourself in half.",
+              "authorName": "Armitage",
+              "createdAt": "30m ago",
+              "upvotes": 14
+            }
+          ]
+        },
+        {
+          "id": "post_dystopia",
+          "title": "Dystopia vs. Utopia",
+          "content": "Are we already living in a cyberpunk world without the cool neon lights?",
+          "authorName": "Case",
+          "createdAt": "6h ago",
+          "user_id": "user_1",
+          "upvotes": 47,
+          "comment_count": 15,
+          "comments": [
+            {
+              "comment_id": "c3_du_1",
+              "post_id": "post_dystopia",
+              "user_id": "user_1",
+              "content": "Mega-corps, surveillance, wealth inequality... we got the dystopia but not the cool tech.",
+              "authorName": "Molly",
+              "createdAt": "5h ago",
+              "upvotes": 19
+            },
+            {
+              "comment_id": "c3_du_2",
+              "post_id": "post_dystopia",
+              "user_id": "user_3",
+              "content": "Gibson himself said the future is already here, it's just not evenly distributed.",
+              "authorName": "Armitage",
+              "createdAt": "4h ago",
+              "upvotes": 25
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "title": "high_tech",
+          "isSelected": true
+        },
+        {
+          "title": "low_life",
+          "isSelected": false
+        }
+      ]
+    }
+  }
+}

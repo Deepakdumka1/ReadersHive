@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j9C-Ob-uow" customClass="SDMeetingLinkCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atG-6D-OV9">
+                        <rect key="frame" x="20" y="10" width="335" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-uy-mEX">
+                                <rect key="frame" x="15" y="25" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="AhI-vW-d4N"/>
+                                    <constraint firstAttribute="height" constant="30" id="emu-LR-HZd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Meet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-as-IXO">
+                                <rect key="frame" x="55.000000000000007" y="20.666666666666668" width="90.666666666666686" height="18.000000000000004"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meet.google.com/abc-defg-hij" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-23-kSe">
+                                <rect key="frame" x="54.999999999999986" y="40.666666666666664" width="172.66666666666663" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y32-Xf-hfL">
+                                <rect key="frame" x="250" y="25" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.35294117650000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QJM-nT-JdZ"/>
+                                    <constraint firstAttribute="width" constant="70" id="zx2-Ub-rop"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Launch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchButtonTapped:" destination="j9C-Ob-uow" eventType="touchUpInside" id="arY-PI-dVN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zNv-23-kSe" firstAttribute="leading" secondItem="0Wg-uy-mEX" secondAttribute="trailing" constant="10" id="SfW-rm-jDl"/>
+                            <constraint firstAttribute="trailing" secondItem="y32-Xf-hfL" secondAttribute="trailing" constant="15" id="T0r-Wc-aqv"/>
+                            <constraint firstItem="wdk-as-IXO" firstAttribute="leading" secondItem="0Wg-uy-mEX" secondAttribute="trailing" constant="10" id="a8X-Eu-nPo"/>
+                            <constraint firstItem="zNv-23-kSe" firstAttribute="top" secondItem="0Wg-uy-mEX" secondAttribute="centerY" constant="0.66666666666666785" id="auq-1S-h5a"/>
+                            <constraint firstItem="0Wg-uy-mEX" firstAttribute="centerY" secondItem="atG-6D-OV9" secondAttribute="centerY" id="cbJ-yw-BpP"/>
+                            <constraint firstItem="0Wg-uy-mEX" firstAttribute="leading" secondItem="atG-6D-OV9" secondAttribute="leading" constant="15" id="iFR-yQ-NXd"/>
+                            <constraint firstItem="wdk-as-IXO" firstAttribute="bottom" secondItem="0Wg-uy-mEX" secondAttribute="centerY" constant="-1.3333333333333321" id="sxN-p3-P25"/>
+                            <constraint firstItem="y32-Xf-hfL" firstAttribute="centerY" secondItem="atG-6D-OV9" secondAttribute="centerY" id="v90-W2-teJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Q6o-3f-ao1"/>
+            <constraints>
+                <constraint firstItem="atG-6D-OV9" firstAttribute="leading" secondItem="j9C-Ob-uow" secondAttribute="leading" constant="20" id="Jhj-7n-GgY"/>
+                <constraint firstItem="atG-6D-OV9" firstAttribute="top" secondItem="j9C-Ob-uow" secondAttribute="top" constant="10" id="ehs-h1-e7q"/>
+                <constraint firstAttribute="trailing" secondItem="atG-6D-OV9" secondAttribute="trailing" constant="20" id="wvd-cs-kll"/>
+                <constraint firstAttribute="bottom" secondItem="atG-6D-OV9" secondAttribute="bottom" constant="10" id="zuc-cV-Tcg"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="atG-6D-OV9" id="hxf-22-zSo"/>
+                <outlet property="launchButton" destination="y32-Xf-hfL" id="hqv-J3-1fF"/>
+                <outlet property="linkLabel" destination="zNv-23-kSe" id="YG7-Fi-g8p"/>
+                <outlet property="meetIconImageView" destination="0Wg-uy-mEX" id="5LK-Wd-jdN"/>
+                <outlet property="titleLabel" destination="wdk-as-IXO" id="3Ht-zu-OMc"/>
+            </connections>
+            <point key="canvasLocation" x="135.1145038167939" y="128.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+</document>

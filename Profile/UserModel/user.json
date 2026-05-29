@@ -1,0 +1,221 @@
+{
+  "users": {
+    "user_1": {
+      "user_id": "user_1",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-10"
+    },
+    "user_2": {
+      "user_id": "user_2",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-11"
+    },
+    "user_3": {
+      "user_id": "user_3",
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-12"
+    },
+    "user_4": {
+      "user_id": "user_4",
+      "name": "Diana",
+      "email": "diana@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-13"
+    },
+    "user_5": {
+      "user_id": "user_5",
+      "name": "Ethan",
+      "email": "ethan@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-14"
+    },
+    "user_6": {
+      "user_id": "user_6",
+      "name": "Fiona",
+      "email": "fiona@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-15"
+    },
+    "user_7": {
+      "user_id": "user_7",
+      "name": "George",
+      "email": "george@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-16"
+    },
+    "user_8": {
+      "user_id": "user_8",
+      "name": "Hannah",
+      "email": "hannah@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-17"
+    },
+    "user_9": {
+      "user_id": "user_9",
+      "name": "Ian",
+      "email": "ian@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-18"
+    },
+    "user_10": {
+      "user_id": "user_10",
+      "name": "Julia",
+      "email": "julia@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-19"
+    },
+    "user_11": {
+      "user_id": "user_11",
+      "name": "Kevin",
+      "email": "kevin@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-20"
+    },
+    "user_12": {
+      "user_id": "user_12",
+      "name": "Lily",
+      "email": "lily@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-21"
+    },
+    "user_13": {
+      "user_id": "user_13",
+      "name": "Michael",
+      "email": "michael@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-22"
+    },
+    "user_14": {
+      "user_id": "user_14",
+      "name": "Nina",
+      "email": "nina@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-23"
+    },
+    "user_15": {
+      "user_id": "user_15",
+      "name": "Oscar",
+      "email": "oscar@example.com",
+      "password_hash": null,
+      "created_at": "2026-03-24"
+    },
+    "u_bruce_001": {
+      "user_id": "u_bruce_001",
+      "name": "Bruce Wayne",
+      "email": "u_bruce_001@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_16": {
+      "user_id": "user_16",
+      "name": "Paul",
+      "email": "user_16@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_17": {
+      "user_id": "user_17",
+      "name": "Quinn",
+      "email": "user_17@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_18": {
+      "user_id": "user_18",
+      "name": "Rachel",
+      "email": "user_18@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_19": {
+      "user_id": "user_19",
+      "name": "Sam",
+      "email": "user_19@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_20": {
+      "user_id": "user_20",
+      "name": "Tina",
+      "email": "user_20@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_21": {
+      "user_id": "user_21",
+      "name": "Uma",
+      "email": "user_21@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_22": {
+      "user_id": "user_22",
+      "name": "Victor",
+      "email": "user_22@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_23": {
+      "user_id": "user_23",
+      "name": "Wendy",
+      "email": "user_23@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_24": {
+      "user_id": "user_24",
+      "name": "Xavier",
+      "email": "user_24@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_25": {
+      "user_id": "user_25",
+      "name": "Yara",
+      "email": "user_25@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_26": {
+      "user_id": "user_26",
+      "name": "Zane",
+      "email": "user_26@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_27": {
+      "user_id": "user_27",
+      "name": "Alex",
+      "email": "user_27@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_28": {
+      "user_id": "user_28",
+      "name": "Bella",
+      "email": "user_28@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "user_29": {
+      "user_id": "user_29",
+      "name": "Chris",
+      "email": "user_29@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    },
+    "temp_user_1": {
+      "user_id": "temp_user_1",
+      "name": "Current User",
+      "email": "current@example.com",
+      "password_hash": null,
+      "created_at": "2026-04-12"
+    }
+  }
+}

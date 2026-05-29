@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discussion_cell" id="beu-cZ-2hy" customClass="ScheduleDiscussionCollectionViewCell" customModule="Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cId-rA-h6r">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzS-a5-qUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="175"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWc-Sv-OvK">
+                                <rect key="frame" x="18" y="18" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.29999999999999999" green="0.84999999999999998" blue="0.55000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="NjU-zr-GND"/>
+                                    <constraint firstAttribute="height" constant="8" id="pRR-05-7LG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHEDULED • 8:00 PM EST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLn-4X-UdB">
+                                <rect key="frame" x="32" y="16" width="140.33333333333334" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Deep Dive: The Castle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTi-bh-EeC">
+                                <rect key="frame" x="18" y="38" width="264" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-Sx-foT">
+                                <rect key="frame" x="18" y="63.666666666666664" width="264" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zT8-dC-yGQ">
+                                <rect key="frame" x="18" y="135" width="64" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="YOv-RG-wXq"/>
+                                    <constraint firstAttribute="width" constant="64" id="dpY-PL-Szz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6186523438" green="0.3757324219" blue="0.7915039062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pTi-bh-EeC" firstAttribute="top" secondItem="SWc-Sv-OvK" secondAttribute="bottom" constant="12" id="0XK-kZ-F1j"/>
+                            <constraint firstItem="WLn-4X-UdB" firstAttribute="centerY" secondItem="SWc-Sv-OvK" secondAttribute="centerY" id="AQ0-7n-i3s"/>
+                            <constraint firstItem="WLn-4X-UdB" firstAttribute="leading" secondItem="SWc-Sv-OvK" secondAttribute="trailing" constant="6" id="ATQ-qI-9k2"/>
+                            <constraint firstItem="zT8-dC-yGQ" firstAttribute="leading" secondItem="WzS-a5-qUQ" secondAttribute="leading" constant="18" id="BaF-vA-qYL"/>
+                            <constraint firstItem="SWc-Sv-OvK" firstAttribute="top" secondItem="WzS-a5-qUQ" secondAttribute="top" constant="18" id="CpC-X4-dIf"/>
+                            <constraint firstAttribute="bottom" secondItem="zT8-dC-yGQ" secondAttribute="bottom" constant="16" id="Pm3-ag-3Mn"/>
+                            <constraint firstAttribute="trailing" secondItem="vnc-Sx-foT" secondAttribute="trailing" constant="18" id="Yx0-ZW-ySG"/>
+                            <constraint firstItem="vnc-Sx-foT" firstAttribute="leading" secondItem="WzS-a5-qUQ" secondAttribute="leading" constant="18" id="c5U-eF-6v2"/>
+                            <constraint firstItem="pTi-bh-EeC" firstAttribute="leading" secondItem="WzS-a5-qUQ" secondAttribute="leading" constant="18" id="fMr-G9-PN1"/>
+                            <constraint firstAttribute="trailing" secondItem="pTi-bh-EeC" secondAttribute="trailing" constant="18" id="ifB-6T-Jdn"/>
+                            <constraint firstItem="vnc-Sx-foT" firstAttribute="top" secondItem="pTi-bh-EeC" secondAttribute="bottom" constant="4" id="isS-t4-onO"/>
+                            <constraint firstItem="SWc-Sv-OvK" firstAttribute="leading" secondItem="WzS-a5-qUQ" secondAttribute="leading" constant="18" id="s4g-UA-kk4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WzS-a5-qUQ" secondAttribute="trailing" id="3od-vV-vE5"/>
+                    <constraint firstAttribute="bottom" secondItem="WzS-a5-qUQ" secondAttribute="bottom" id="P0u-xN-c4N"/>
+                    <constraint firstItem="WzS-a5-qUQ" firstAttribute="leading" secondItem="cId-rA-h6r" secondAttribute="leading" id="WWa-z1-lPf"/>
+                    <constraint firstItem="WzS-a5-qUQ" firstAttribute="top" secondItem="cId-rA-h6r" secondAttribute="top" id="kEe-p1-HyG"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="TCb-Y6-pt0"/>
+            <size key="customSize" width="300" height="175"/>
+            <connections>
+                <outlet property="avatarStackContainer" destination="zT8-dC-yGQ" id="lDa-FH-l5H"/>
+                <outlet property="containerView" destination="cId-rA-h6r" id="CbO-UH-k0u"/>
+                <outlet property="scheduledLabel" destination="WLn-4X-UdB" id="xuH-50-Aev"/>
+                <outlet property="subtitleLabel" destination="vnc-Sx-foT" id="K7T-N8-HWg"/>
+                <outlet property="titleLabel" destination="pTi-bh-EeC" id="N4b-td-bQo"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="158.09859154929578"/>
+        </collectionViewCell>
+    </objects>
+</document>
