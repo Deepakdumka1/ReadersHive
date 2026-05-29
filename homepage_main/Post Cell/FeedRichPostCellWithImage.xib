@@ -108,6 +108,7 @@
                                     <constraint firstItem="bookCoverImg" firstAttribute="centerY" secondItem="bookRowView" secondAttribute="centerY" id="br2"/>
                                     <constraint firstAttribute="trailing" secondItem="bookCoverImg" secondAttribute="trailing" id="br3"/>
                                     <constraint firstItem="bookTitleLbl" firstAttribute="leading" secondItem="bookRowView" secondAttribute="leading" id="br4"/>
+                                    <constraint firstItem="bookCoverImg" firstAttribute="leading" secondItem="bookTitleLbl" secondAttribute="trailing" constant="12" id="br6"/>
                                     <constraint firstAttribute="height" constant="84.666666666666686" id="br5"/>
                                 </constraints>
                             </view>

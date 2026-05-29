@@ -462,19 +462,54 @@ extension OtherUserProfileViewController: UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.section > 0 && selectedSegmentIndex == 0 {
-            let item = currentItems[indexPath.row]
-            if case .post(let post) = item {
-                let commentsVC = CommentsViewController()
-                commentsVC.post = post
-                commentsVC.feedData = AppDependencies.shared.feedData
-                commentsVC.showPostHeader = true
-                commentsVC.hidesBottomBarWhenPushed = true
-                if let nav = navigationController {
-                    nav.pushViewController(commentsVC, animated: true)
-                } else {
-                    let navVC = UINavigationController(rootViewController: commentsVC)
-                    present(navVC, animated: true)
+        if indexPath.section > 0 {
+            if selectedSegmentIndex == 0 {
+                let item = currentItems[indexPath.row]
+                if case .post(let post) = item {
+                    let commentsVC = CommentsViewController()
+                    commentsVC.post = post
+                    commentsVC.feedData = AppDependencies.shared.feedData
+                    commentsVC.showPostHeader = true
+                    commentsVC.hidesBottomBarWhenPushed = true
+                    if let nav = navigationController {
+                        nav.pushViewController(commentsVC, animated: true)
+                    } else {
+                        let navVC = UINavigationController(rootViewController: commentsVC)
+                        present(navVC, animated: true)
+                    }
+                }
+            } else if selectedSegmentIndex == 1 {
+                let item = currentItems[indexPath.row]
+                if case .club(let club) = item {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    if let vc = storyboard.instantiateViewController(withIdentifier: "KafkaViewController") as? KafkaViewController {
+                        vc.clubId = club.id ?? ""
+                        vc.club = club
+                        vc.clubDetailData = AppDependencies.shared.clubdetailData
+                        vc.clubData = AppDependencies.shared.clubData
+                        vc.hidesBottomBarWhenPushed = true
+                        
+                        if let nav = navigationController {
+                            nav.pushViewController(vc, animated: true)
+                        } else {
+                            let navVC = UINavigationController(rootViewController: vc)
+                            present(navVC, animated: true)
+                        }
+                    }
+                }
+            } else if selectedSegmentIndex == 2 {
+                let shelfSection = userBooksBySection[indexPath.section - 1]
+                let books = shelfSection.books.compactMap { ref in
+                    allBooksCache.first { $0.id == ref.id }
+                }
+                if !books.isEmpty {
+                    let book = books[indexPath.row]
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    if let vc = storyboard.instantiateViewController(withIdentifier: "BookPresentationViewController") as? BookPresentationViewController {
+                        vc.book = book
+                        vc.bookshelfData = AppDependencies.shared.bookshelfData
+                        present(vc, animated: true)
+                    }
                 }
             }
         }
